@@ -16,7 +16,7 @@
 | **7** | **PLN e Exploração de Corpora** | Lematização e radicalização (stemming) <br> Etiquetagem morfossintática (POS tagging) <br> Comparação de corpora e registros <br> Comparações por palavras-chave (Keywords) <br> Visualização de padrões linguísticos <br> Limites da anotação automatizada | [](./modulo_07) |
 | **8** | **Mini-projetos e Reprodutibilidade** | Formulação de uma pergunta de pesquisa clara <br> Seleção da base de dados (corpus/tabela) <br> Construção de um fluxo de trabalho (workflow) analítico <br> Interpretação e relato dos resultados <br> Práticas de reprodutibilidade e compartilhamento | [](./modulo_08) |
 
-## Tecnologias Utilizadas
+## Framework:
 * **Linguagem:** Python
 * **Manipulação de Dados:** `numpy`, `pandas`
 * **Visualização:** `matplotlib`, `seaborn`
