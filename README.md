@@ -1,5 +1,8 @@
 # Análise de Dados e Programação para Humanidades
 
+## Incluir:
+- local; horários; link para aulas gravadas; site do projeto, etc.
+
 ## Estrutura do Curso (_provisório_)
 
 | Módulo | Título | Tópicos Abordados | Acesso |
