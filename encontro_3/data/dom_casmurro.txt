@@ -1,57 +1,4 @@
-﻿The Project Gutenberg eBook of Dom Casmurro
-    
-This eBook is for the use of anyone anywhere in the United States and
-most other parts of the world at no cost and with almost no restrictions
-whatsoever. You may copy it, give it away or re-use it under the terms
-of the Project Gutenberg License included with this eBook or online
-at www.gutenberg.org. If you are not located in the United States,
-you will have to check the laws of the country where you are located
-before using this eBook.
-
-Title: Dom Casmurro
-
-Author: Machado de Assis
-
-
-        
-Release date: October 15, 2017 [eBook #55752]
-                Most recently updated: October 23, 2024
-
-Language: Portuguese
-
-Other information and formats: www.gutenberg.org/ebooks/55752
-
-Credits: Produced by Laura Natal Rodriguez & Marc D'Hooghe at Free
-        Literature (online soon in an extended version,also linking
-        to free sources for education worldwide ... MOOC's,
-        educational materials,...) (Images generously made available
-        by the Bibliotheca Nacional Digital Brasil.)
-
-
-*** START OF THE PROJECT GUTENBERG EBOOK DOM CASMURRO ***
-
-DOM CASMURRO
-
-POR
-
-MACHADO DE ASSIS
-
-DA ACADEMIA BRAZILEIRA
-
-H. GARNIER, LIVREIRO-EDITOR
-
-RUA MOREIRA CEZAR, 71
-
-RIO DE JANEIRO
-
-6, RUE DES SAINTS-PÈRES, 6
-
-PARIZ
-
-
-
-
-I
+﻿I.
 
 Do titulo.
 
@@ -8743,7 +8690,7 @@ INDICE
 *** END OF THE PROJECT GUTENBERG EBOOK DOM CASMURRO ***
 
 
-    
+
 
 Updated editions will replace the previous one—the old editions will
 be renamed.
@@ -8848,7 +8795,7 @@ performed, viewed, copied or distributed:
     at www.gutenberg.org. If you
     are not located in the United States, you will have to check the laws
     of the country where you are located before using this eBook.
-  
+
 1.E.2. If an individual Project Gutenberg electronic work is
 derived from texts not protected by U.S. copyright law (does not
 contain a notice indicating that it is posted with permission of the
@@ -8910,7 +8857,7 @@ provided that:
         Gutenberg Literary Archive Foundation at the address specified in
         Section 4, “Information about donations to the Project Gutenberg
         Literary Archive Foundation.”
-    
+
     • You provide a full refund of any money paid by a user who notifies
         you in writing (or by e-mail) within 30 days of receipt that s/he
         does not agree to the terms of the full Project Gutenberg™
@@ -8918,15 +8865,15 @@ provided that:
         copies of the works possessed in a physical medium and discontinue
         all use of and all access to other copies of Project Gutenberg™
         works.
-    
+
     • You provide, in accordance with paragraph 1.F.3, a full refund of
         any money paid for a work or a replacement copy, if a defect in the
         electronic work is discovered and reported to you within 90 days of
         receipt of the work.
-    
+
     • You comply with all other terms of this agreement for free
         distribution of Project Gutenberg™ works.
-    
+
 
 1.E.9. If you wish to charge a fee or distribute a Project
 Gutenberg™ electronic work or group of works on different terms than

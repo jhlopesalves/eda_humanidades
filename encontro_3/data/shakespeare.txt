@@ -1,33 +1,4 @@
-﻿The Project Gutenberg eBook of The Complete Works of William Shakespeare
-    
-This eBook is for the use of anyone anywhere in the United States and
-most other parts of the world at no cost and with almost no restrictions
-whatsoever. You may copy it, give it away or re-use it under the terms
-of the Project Gutenberg License included with this eBook or online
-at www.gutenberg.org. If you are not located in the United States,
-you will have to check the laws of the country where you are located
-before using this eBook.
-
-Title: The Complete Works of William Shakespeare
-
-Author: William Shakespeare
-
-
-        
-Release date: January 1, 1994 [eBook #100]
-                Most recently updated: August 24, 2025
-
-Language: English
-
-Other information and formats: www.gutenberg.org/ebooks/100
-
-
-*** START OF THE PROJECT GUTENBERG EBOOK THE COMPLETE WORKS OF WILLIAM SHAKESPEARE ***
-
-
-
-
-The Complete Works of William Shakespeare
+﻿The Complete Works of William Shakespeare
 
 by William Shakespeare
 
@@ -57260,7 +57231,7 @@ Arm! Arm! The enemy doth make assault!
 
 [_Cry: “St George,” “A Talbot!”_]
 
-The French leap over the walls in their shirts. Enter several ways the 
+The French leap over the walls in their shirts. Enter several ways the
 Bastard of Orleans, Alençon and Reignier, half ready and half unready.
 
 ALENÇON.
@@ -84948,7 +84919,7 @@ Scene III. The British Camp near Dover
 
 
 
- Dramatis Personæ 
+ Dramatis Personæ
 
 LEAR, King of Britain.
 GONERIL, eldest daughter to Lear.
@@ -87294,7 +87265,7 @@ would have none but knaves follow it, since a fool gives it.
              And let the wise man fly:
           The knave turns fool that runs away;
              The fool no knave perdy.
-    
+
 
 KENT.
 Where learn’d you this, fool?
@@ -132578,22 +132549,22 @@ Contents
  Scene II.  The same. A room in the Duke of Lancaster’s palace.
  Scene III. Open Space, near Coventry. Lists set out, and a Throne. Heralds, &c., attending.
  Scene IV.  London. A Room in the King’s Castle.
- 
+
 ACT II
  Scene I.   London. An Apartment in Ely House.
  Scene II.  The Same. A Room in the Castle.
  Scene III. The Wolds in Gloucestershire.
  Scene IV.  A camp in Wales.
- 
+
 ACT III
  Scene I.   Bristol. Bolingbroke’s camp.
  Scene II.  The coast of Wales. A castle in view.
  Scene III. Wales. Before Flint Castle.
  Scene IV.  Langley. The Duke of York’s garden.
- 
+
 ACT IV
  Scene I.   Westminster Hall.
- 
+
 ACT V
  Scene I.   London. A street leading to the Tower.
  Scene II.  The same. A room in the Duke of York’s palace.
@@ -196048,7 +196019,7 @@ In her light chariot quickly is convey’d;           1192
 *** END OF THE PROJECT GUTENBERG EBOOK THE COMPLETE WORKS OF WILLIAM SHAKESPEARE ***
 
 
-    
+
 
 Updated editions will replace the previous one—the old editions will
 be renamed.
@@ -196153,7 +196124,7 @@ performed, viewed, copied or distributed:
     at www.gutenberg.org. If you
     are not located in the United States, you will have to check the laws
     of the country where you are located before using this eBook.
-  
+
 1.E.2. If an individual Project Gutenberg electronic work is
 derived from texts not protected by U.S. copyright law (does not
 contain a notice indicating that it is posted with permission of the
@@ -196215,7 +196186,7 @@ provided that:
         Gutenberg Literary Archive Foundation at the address specified in
         Section 4, “Information about donations to the Project Gutenberg
         Literary Archive Foundation.”
-    
+
     • You provide a full refund of any money paid by a user who notifies
         you in writing (or by e-mail) within 30 days of receipt that s/he
         does not agree to the terms of the full Project Gutenberg™
@@ -196223,15 +196194,15 @@ provided that:
         copies of the works possessed in a physical medium and discontinue
         all use of and all access to other copies of Project Gutenberg™
         works.
-    
+
     • You provide, in accordance with paragraph 1.F.3, a full refund of
         any money paid for a work or a replacement copy, if a defect in the
         electronic work is discovered and reported to you within 90 days of
         receipt of the work.
-    
+
     • You comply with all other terms of this agreement for free
         distribution of Project Gutenberg™ works.
-    
+
 
 1.E.9. If you wish to charge a fee or distribute a Project
 Gutenberg™ electronic work or group of works on different terms than
