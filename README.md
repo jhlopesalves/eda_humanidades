@@ -14,7 +14,7 @@
 | :--- | :--- | :--- | :---: |
 | **1** | **Introdução aos Métodos Computacionais** | Por que programação e análise de dados importam para as humanidades <br> O que a programação e métodos computacionais podem fazer na pesquisa <br> Por que Python? <br> Código aberto e cultura de software científico <br> Por que usar notebooks e o Google Colab | [Notebook 1](./encontro_1/enc_1.ipynb) |
 | **2** | **Fundamentos de Python** | Variáveis e tipos básicos <br> Strings, listas, dicionários e conjuntos <br> Indexação e fatiamento (slicing) <br> Condicionais e laços de repetição (loops) <br> Funções, importações e módulos <br> Objetos, atributos e métodos <br> Leitura de erros, noções de depuração (debugging) e uso da documentação | [Notebook 2](./encontro_2/enc_2.ipynb) |
-| **3** | **Fundamentos de Python 2** | Dicionários <br> Aprofundamento em laços de repetição (loops) <br> Funções <br> Métricas básicas de estatística descritiva | [Notebook 3](./encontro_3/enc_3.ipynb) <br> [Lab Encontro 3](./encontro_3/lab_session3.ipynb)|
+| **3** | **Fundamentos de Python 2** | Dicionários <br> Aprofundamento em laços de repetição (loops) <br> Funções <br> Métricas básicas de estatística descritiva | [Notebook 3](./encontro_3/enc_3.ipynb) <br> [Lab Session](./encontro_3/lab_session3.ipynb)|
 | **4** |  | TODO! | [](./modulo_04) |
 | **5** |  | TODO! | [](./modulo_05) |
 | **6** |  | TODO! | [](./modulo_06) |
