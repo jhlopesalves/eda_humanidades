@@ -1,0 +1,53 @@
+year,primary_category,category_label,n_papers
+2020,cs.AI,Artificial Intelligence,20
+2020,cs.CL,Computational Linguistics / NLP,39
+2020,cs.CY,Computers and Society,8
+2020,cs.HC,Human-Computer Interaction,18
+2020,cs.IR,Information Retrieval,4
+2020,cs.LG,Machine Learning,90
+2020,stat.AP,Applied Statistics,109
+2020,stat.ML,Statistical Machine Learning,213
+2021,cs.AI,Artificial Intelligence,18
+2021,cs.CL,Computational Linguistics / NLP,47
+2021,cs.CY,Computers and Society,5
+2021,cs.DL,Digital Libraries,1
+2021,cs.HC,Human-Computer Interaction,6
+2021,cs.IR,Information Retrieval,13
+2021,cs.LG,Machine Learning,106
+2021,stat.AP,Applied Statistics,106
+2021,stat.ML,Statistical Machine Learning,195
+2022,cs.AI,Artificial Intelligence,15
+2022,cs.CL,Computational Linguistics / NLP,62
+2022,cs.CY,Computers and Society,10
+2022,cs.DL,Digital Libraries,7
+2022,cs.HC,Human-Computer Interaction,9
+2022,cs.IR,Information Retrieval,8
+2022,cs.LG,Machine Learning,105
+2022,stat.AP,Applied Statistics,97
+2022,stat.ML,Statistical Machine Learning,218
+2023,cs.AI,Artificial Intelligence,19
+2023,cs.CL,Computational Linguistics / NLP,77
+2023,cs.CY,Computers and Society,18
+2023,cs.HC,Human-Computer Interaction,18
+2023,cs.IR,Information Retrieval,12
+2023,cs.LG,Machine Learning,138
+2023,stat.AP,Applied Statistics,109
+2023,stat.ML,Statistical Machine Learning,199
+2024,cs.AI,Artificial Intelligence,43
+2024,cs.CL,Computational Linguistics / NLP,125
+2024,cs.CY,Computers and Society,17
+2024,cs.DL,Digital Libraries,1
+2024,cs.HC,Human-Computer Interaction,31
+2024,cs.IR,Information Retrieval,14
+2024,cs.LG,Machine Learning,154
+2024,stat.AP,Applied Statistics,100
+2024,stat.ML,Statistical Machine Learning,234
+2025,cs.AI,Artificial Intelligence,57
+2025,cs.CL,Computational Linguistics / NLP,143
+2025,cs.CY,Computers and Society,19
+2025,cs.DL,Digital Libraries,3
+2025,cs.HC,Human-Computer Interaction,32
+2025,cs.IR,Information Retrieval,20
+2025,cs.LG,Machine Learning,206
+2025,stat.AP,Applied Statistics,128
+2025,stat.ML,Statistical Machine Learning,257
