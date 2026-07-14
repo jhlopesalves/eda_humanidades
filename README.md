@@ -6,7 +6,7 @@
 
 Curso de introdução à programação em Python e à análise de dados para linguistas e pesquisadores das humanidades. São dois módulos de seis encontros semanais (2h cada), com notebooks executáveis, tarefas com gabarito comentado e dados reais: obras literárias, metadados bibliográficos e indicadores socioeconômicos.
 
-O curso é hands-on: todo conceito aparece primeiro em código que roda, e a regra de ouro é ir à fonte — documentação oficial, `help()`, discussões públicas. Os notebooks são determinísticos (sementes fixas) e podem ser reexecutados do zero, do primeiro ao último bloco.
+O curso adota uma abordagem prática (*hands-on*): cada conceito é apresentado por meio de código executável, com incentivo à consulta da documentação oficial das bibliotecas utilizadas, da função `help()` e de fontes técnicas da comunidade, como o [Stack Overflow](https://stackoverflow.com/) e o [Cross Validated](https://stats.stackexchange.com/). Os notebooks são determinísticos, com sementes fixas, e podem ser reexecutados integralmente.
 
 ## Informações gerais
 
