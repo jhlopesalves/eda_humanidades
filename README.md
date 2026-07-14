@@ -11,7 +11,7 @@ O curso adota uma abordagem prática (*hands-on*): cada conceito é apresentado 
 ## Informações gerais
 
 - **Instrutor:** Jhonatan H. Lopes
-- **Local:** CAD 2, Laboratório B206 — Universidade Federal de Minas Gerais (UFMG)
+- **Local:** CAD 2, Laboratório B206 - Universidade Federal de Minas Gerais (UFMG)
 - **Horário:** sextas-feiras, às 14h
 
 ## Como usar este repositório
@@ -39,7 +39,7 @@ pip install numpy pandas matplotlib seaborn scipy statsmodels jupyter
 
 ## Módulo 2 — da descritiva à inferência (em preparação)
 
-O segundo módulo fecha os tópicos finais da estatística descritiva (correlação, transformações, normalização) e avança para a inferência estatística: amostragem, intervalos de confiança, testes de hipótese e modelos de regressão — sempre com exemplos linguísticos. Cronograma e notebooks serão publicados aqui.
+O segundo módulo fecha os tópicos finais da estatística descritiva (correlação, transformações, normalização) e avança para a inferência estatística: amostragem, intervalos de confiança, testes de hipótese e modelos de regressão. Cronograma e notebooks serão publicados aqui.
 
 ## Dados
 
