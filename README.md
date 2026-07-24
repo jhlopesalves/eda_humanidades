@@ -4,9 +4,9 @@
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![Feito para o Colab](https://img.shields.io/badge/Google%20Colab-pronto-orange.svg)](https://colab.research.google.com/)
 
-Curso de introdução à programação em Python e à análise de dados para linguistas e pesquisadores das humanidades. São dois módulos de seis encontros semanais (2h cada), com notebooks executáveis, tarefas com gabarito comentado e dados reais: obras literárias, metadados bibliográficos e indicadores socioeconômicos.
+Curso de introdução à programação em Python e à análise de dados para linguistas e pesquisadores das humanidades. O Módulo 1 consistiu em seis encontros semanais de duas horas; o Módulo 2 está em preparação e consistirá em seis encontros de duas horas e trinta minutos, com notebooks executáveis, tarefas com gabarito comentado e dados reais: obras literárias, metadados bibliográficos e indicadores socioeconômicos.
 
-O curso adota uma abordagem prática (*hands-on*): cada conceito é apresentado por meio de código executável, com incentivo à consulta da documentação oficial das bibliotecas utilizadas, da função `help()` e de fontes técnicas da comunidade, como o [Stack Overflow](https://stackoverflow.com/) e o [Cross Validated](https://stats.stackexchange.com/). Os notebooks são determinísticos, com sementes fixas, e podem ser reexecutados integralmente. A proposta também é desenvolver autonomia para pesquisar, compreender e resolver problemas técnicos.
+O curso adota uma abordagem prática (*hands-on*): cada conceito é apresentado por meio de código executável, com incentivo à consulta da documentação oficial das bibliotecas utilizadas, da função `help()` e de fontes técnicas da comunidade, como o [Stack Overflow](https://stackoverflow.com/) e o [Cross Validated](https://stats.stackexchange.com/). Exemplos que envolvem aleatoriedade usam sementes fixas quando necessário. Algumas células demonstram erros intencionalmente e devem ser executadas e interpretadas individualmente. A proposta também é desenvolver autonomia para pesquisar, compreender e resolver problemas técnicos.
 
 ## Informações gerais
 
@@ -31,7 +31,7 @@ Clique no botão "Open in Colab" do encontro desejado na tabela abaixo. Nada pre
 
 ## Módulo 2 — da descritiva à inferência (em preparação)
 
-O segundo módulo fecha os tópicos finais da estatística descritiva (correlação, transformações, normalização) e avança para a inferência estatística: amostragem, intervalos de confiança, testes de hipótese e modelos de regressão. Cronograma e notebooks serão publicados aqui.
+O Módulo 2 está atualmente em preparação. Seu cronograma, datasets e notebooks serão publicados neste repositório após a conclusão do planejamento.
 
 ## Dados
 
