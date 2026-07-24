@@ -1,9 +1,0 @@
-# Ambiente de referência: Python 3.11
-numpy>=1.26,<3
-pandas>=2.1,<4
-matplotlib>=3.8,<4
-seaborn>=0.13,<1
-scipy>=1.11,<2
-jupyterlab>=4.0,<5
-nbformat>=5.9,<6
-nbclient>=0.10,<1
