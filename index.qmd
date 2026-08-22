@@ -1,0 +1,5 @@
+---
+title: "Estatística Descritiva e Inferencial em Python para Humanidades"
+---
+
+Este site reúne os materiais do curso.
