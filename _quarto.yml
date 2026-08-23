@@ -20,17 +20,17 @@ website:
       - section: Módulo 1
         contents:
           - href: encontro_1/enc_1.ipynb
-            text: "Encontro 1 — Primeiros passos: Colab, Python e lógica"
+            text: "Encontro 1: Primeiros passos: Colab, Python e lógica"
           - href: encontro_2/enc_2.ipynb
-            text: "Encontro 2 — Fundamentos: listas, loops, condicionais e dicionários"
+            text: "Encontro 2: Fundamentos: listas, loops, condicionais e dicionários"
           - href: encontro_3/enc_3.ipynb
-            text: "Encontro 3 — Dicionários, métricas lexicais e funções"
+            text: "Encontro 3: Dicionários, métricas lexicais e funções"
           - href: encontro_4/enc_4.ipynb
-            text: "Encontro 4 — NumPy e pandas: do registro à tabela"
+            text: "Encontro 4: NumPy e pandas: do registro à tabela"
           - href: encontro_5/enc_5.ipynb
-            text: "Encontro 5 — Estatística descritiva e visualização"
+            text: "Encontro 5: Estatística descritiva e visualização"
           - href: encontro_6/enc_6.ipynb
-            text: "Encontro 6 — Forma, normalidade e dispersão"
+            text: "Encontro 6: Forma, normalidade e dispersão"
 
 execute:
   enabled: false
