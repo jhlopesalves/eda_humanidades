@@ -4,7 +4,7 @@ title: "Estatística Descritiva e Inferencial em Python para Humanidades"
 
 Este site reúne notas de curso sobre Python, análise de dados e estatística para estudantes e pesquisadores das humanidades. Os materiais combinam explicações, código e resultados salvos em notebooks executáveis.
 
-[Começar pelo Encontro 1](encontro_1/enc_1.ipynb){.btn .btn-primary} [Abrir o repositório no GitHub](https://github.com/jhlopesalves/eda_humanidades){.btn .btn-secondary}
+[Começar pelo Encontro 1 →](encontro_1/enc_1.ipynb){.home-start}
 
 ## Sobre o curso
 
@@ -16,6 +16,11 @@ O curso é voltado especialmente a linguistas e outros pesquisadores das humanid
 2. [Fundamentos de Python](encontro_2/enc_2.ipynb)
 3. [Dicionários, funções e métricas lexicais](encontro_3/enc_3.ipynb)
 4. [NumPy e pandas](encontro_4/enc_4.ipynb)
+
+   ::: {.course-interlude}
+   [Interlúdio — Datasaurus Dozen](encontro_5/datasaurus.ipynb)
+   :::
+
 5. [Estatística descritiva e visualização](encontro_5/enc_5.ipynb)
 6. [Forma, normalidade e dispersão](encontro_6/enc_6.ipynb)
 
@@ -25,11 +30,27 @@ O Módulo 2 está em preparação. Seu planejamento e seus materiais serão publ
 
 ## Como utilizar os materiais
 
-| Interface | Uso |
-| :--- | :--- |
-| **Website** | Leitura, estudo e consulta das notas e dos resultados salvos. |
-| **[Google Colab](https://colab.research.google.com/github/jhlopesalves/eda_humanidades/blob/main/encontro_1/enc_1.ipynb)** | Execução, alteração e experimentação com os notebooks. Cada encontro também contém um botão para abri-lo no Colab. |
-| **[GitHub](https://github.com/jhlopesalves/eda_humanidades)** | Acesso aos arquivos-fonte, dados, tarefas, histórico de versões e colaboração. |
+:::: {.resource-grid}
+
+::: {.resource-card}
+### Website
+
+Leitura, estudo e consulta das notas e dos resultados salvos.
+:::
+
+::: {.resource-card}
+### [Google Colab](https://colab.research.google.com/github/jhlopesalves/eda_humanidades/blob/main/encontro_1/enc_1.ipynb)
+
+Execução, alteração e experimentação com os notebooks.
+:::
+
+::: {.resource-card}
+### [GitHub](https://github.com/jhlopesalves/eda_humanidades)
+
+Código, dados, tarefas e histórico de versões.
+:::
+
+::::
 
 ## Dados, código e licença
 
