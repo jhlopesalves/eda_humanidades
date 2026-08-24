@@ -1,0 +1,36 @@
+---
+title: "Estatística Descritiva e Inferencial em Python para Humanidades"
+---
+
+Este site reúne notas de curso sobre Python, análise de dados e estatística para estudantes e pesquisadores das humanidades. Os materiais combinam explicações, código e resultados salvos em notebooks executáveis.
+
+[Começar pelo Encontro 1](encontro_1/enc_1.ipynb){.btn .btn-primary} [Abrir o repositório no GitHub](https://github.com/jhlopesalves/eda_humanidades){.btn .btn-secondary}
+
+## Sobre o curso
+
+O curso é voltado especialmente a linguistas e outros pesquisadores das humanidades que desejam desenvolver uma prática de análise de dados em Python. A abordagem é *hands-on*: os conceitos são apresentados em notebooks que podem ser lidos no site e executados no Google Colab. O percurso parte dos fundamentos de programação, avança pela manipulação e visualização de dados e chega à estatística descritiva, preparando a passagem posterior à inferência.
+
+## Módulo 1 — Python e estatística descritiva
+
+1. [Primeiros passos](encontro_1/enc_1.ipynb)
+2. [Fundamentos de Python](encontro_2/enc_2.ipynb)
+3. [Dicionários, funções e métricas lexicais](encontro_3/enc_3.ipynb)
+4. [NumPy e pandas](encontro_4/enc_4.ipynb)
+5. [Estatística descritiva e visualização](encontro_5/enc_5.ipynb)
+6. [Forma, normalidade e dispersão](encontro_6/enc_6.ipynb)
+
+## Módulo 2 — da descritiva à inferência
+
+O Módulo 2 está em preparação. Seu planejamento e seus materiais serão publicados quando estiverem concluídos.
+
+## Como utilizar os materiais
+
+| Interface | Uso |
+| :--- | :--- |
+| **Website** | Leitura, estudo e consulta das notas e dos resultados salvos. |
+| **[Google Colab](https://colab.research.google.com/github/jhlopesalves/eda_humanidades/blob/main/encontro_1/enc_1.ipynb)** | Execução, alteração e experimentação com os notebooks. Cada encontro também contém um botão para abri-lo no Colab. |
+| **[GitHub](https://github.com/jhlopesalves/eda_humanidades)** | Acesso aos arquivos-fonte, dados, tarefas, histórico de versões e colaboração. |
+
+## Dados, código e licença
+
+Consulte [Dados e proveniência](DATASETS.md) para conhecer as fontes, transformações e limitações dos conjuntos utilizados. O [repositório no GitHub](https://github.com/jhlopesalves/eda_humanidades) contém o código e os materiais completos. O conteúdo autoral é distribuído sob a [licença MIT](https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE); dados e outros materiais de terceiros permanecem sujeitos aos termos de suas fontes.

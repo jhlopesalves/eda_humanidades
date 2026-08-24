@@ -1,0 +1,53 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - DATASETS.md
+    - encontro_1/enc_1.ipynb
+    - encontro_2/enc_2.ipynb
+    - encontro_3/enc_3.ipynb
+    - encontro_4/enc_4.ipynb
+    - encontro_5/enc_5.ipynb
+    - encontro_6/enc_6.ipynb
+
+website:
+  title: "Estatística Descritiva e Inferencial em Python para Humanidades"
+  site-url: https://jhlopesalves.github.io/eda_humanidades/
+  repo-url: https://github.com/jhlopesalves/eda_humanidades
+  repo-branch: main
+  repo-actions: [source, issue]
+  search: true
+  page-navigation: true
+  back-to-top-navigation: true
+  sidebar:
+    style: docked
+    contents:
+      - href: index.qmd
+        text: Início
+      - section: Módulo 1
+        contents:
+          - href: encontro_1/enc_1.ipynb
+            text: "1 - Primeiros Passos"
+          - href: encontro_2/enc_2.ipynb
+            text: "2 - Fundamentos de Python"
+          - href: encontro_3/enc_3.ipynb
+            text: "3 - Funções e métricas lexicais"
+          - href: encontro_4/enc_4.ipynb
+            text: "4 - NumPy e pandas"
+          - href: encontro_5/enc_5.ipynb
+            text: "5 - Estatística descritiva"
+          - href: encontro_6/enc_6.ipynb
+            text: "6 - Forma e dispersão"
+      - href: DATASETS.md
+        text: Dados e proveniência
+
+execute:
+  enabled: false
+
+format:
+  html:
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+
+lang: pt-BR

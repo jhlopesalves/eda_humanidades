@@ -1,4 +1,6 @@
-# Catálogo de dados
+---
+title: "Dados e proveniência"
+---
 
 Este documento registra as fontes conhecidas, o papel dos arquivos no curso, as transformações identificáveis e as lacunas de proveniência. Quando o histórico não preserva uma informação, ela é indicada como não resolvida.
 
@@ -38,9 +40,9 @@ Os identificadores de `arxiv_eda_papers.csv` existem em `arxiv_subset.csv`, e `p
 
 As três tabelas longa e agregadas não são referenciadas pelos notebooks atuais. O histórico não inclui o script que selecionou as nove categorias nem a regra completa de amostragem; também não registra a URL e a data de aquisição da cópia intermediária. Os metadados remetem ao [arXiv](https://arxiv.org/), mas os direitos dos abstracts e artigos dependem de seus autores e licenças.
 
-## Datasaurus — dependência remota
+## Datasaurus — `encontro_5/data/datasaurus.csv`
 
-`encontro_5/datasaurus.ipynb` lê `datasaurus.csv` do repositório público [TidyTuesday de 13 de outubro de 2020](https://github.com/rfordatascience/tidytuesday/tree/main/data/2020/2020-10-13). Não há cópia local. O notebook usa esses datasets para mostrar que resumos marginais semelhantes podem ocultar estruturas bidimensionais muito diferentes.
+O repositório contém uma cópia local de `datasaurus.csv`, proveniente do material público do [TidyTuesday de 13 de outubro de 2020](https://github.com/rfordatascience/tidytuesday/tree/main/data/2020/2020-10-13). `encontro_5/datasaurus.ipynb` usa essa cópia quando ela está disponível e mantém a URL original como alternativa. Os datasets mostram que resumos marginais semelhantes podem ocultar estruturas bidimensionais muito diferentes.
 
 ## Licenças
 
