@@ -1,0 +1,42 @@
+.home-start {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.course-interlude {
+  margin: 0.5rem 0 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--bs-border-color);
+  font-size: 0.95rem;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.resource-card {
+  padding: 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.375rem;
+}
+
+.resource-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.resource-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+}

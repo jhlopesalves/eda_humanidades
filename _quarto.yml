@@ -7,6 +7,7 @@ project:
     - encontro_2/enc_2.ipynb
     - encontro_3/enc_3.ipynb
     - encontro_4/enc_4.ipynb
+    - encontro_5/datasaurus.ipynb
     - encontro_5/enc_5.ipynb
     - encontro_6/enc_6.ipynb
 
@@ -15,12 +16,15 @@ website:
   site-url: https://jhlopesalves.github.io/eda_humanidades/
   repo-url: https://github.com/jhlopesalves/eda_humanidades
   repo-branch: main
-  repo-actions: [source, issue]
   search: true
   page-navigation: true
   back-to-top-navigation: true
   sidebar:
     style: docked
+    tools:
+      - icon: github
+        href: https://github.com/jhlopesalves/eda_humanidades
+        aria-label: GitHub
     contents:
       - href: index.qmd
         text: Início
@@ -34,6 +38,8 @@ website:
             text: "3 - Funções e métricas lexicais"
           - href: encontro_4/enc_4.ipynb
             text: "4 - NumPy e pandas"
+          - href: encontro_5/datasaurus.ipynb
+            text: "Interlúdio — Datasaurus Dozen"
           - href: encontro_5/enc_5.ipynb
             text: "5 - Estatística descritiva"
           - href: encontro_6/enc_6.ipynb
@@ -46,6 +52,7 @@ execute:
 
 format:
   html:
+    css: styles.css
     toc: true
     code-copy: true
     code-overflow: wrap
