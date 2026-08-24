@@ -35,6 +35,55 @@
   margin-bottom: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+h2,
+h3,
+h4,
+section.level2,
+section.level3,
+section.level4 {
+  scroll-margin-top: 5rem;
+}
+
+main a {
+  overflow-wrap: anywhere;
+}
+
+mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+table.dataframe {
+  font-size: 0.92rem;
+}
+
+table.dataframe th,
+table.dataframe td {
+  padding: 0.4rem 0.65rem;
+  border-color: var(--bs-border-color);
+}
+
+table.dataframe thead th {
+  font-weight: 600;
+  background: var(--bs-tertiary-bg, var(--bs-light));
+}
+
+table.dataframe caption,
+.cell-output-display table caption {
+  caption-side: top;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.cell-output-display:has(table) {
+  overflow-x: auto;
+}
+
 @media (max-width: 767.98px) {
   .resource-grid {
     grid-template-columns: 1fr;
