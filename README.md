@@ -1,10 +1,13 @@
-# Análise Exploratória de Dados e Inferência Estatística em Python
+# Estatística Descritiva e Inferencial em Python para Humanidades
 
+[![Site do curso](https://img.shields.io/badge/Site-do%20curso-39729E?logo=quarto&logoColor=white)](https://jhlopesalves.github.io/eda_humanidades/)
 [![Licença: MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-yellow.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![Feito para o Colab](https://img.shields.io/badge/Google%20Colab-pronto-orange.svg)](https://colab.research.google.com/)
 
 Curso de introdução à programação em Python e à análise de dados para linguistas e pesquisadores das humanidades. O Módulo 1 consistiu em seis encontros semanais de duas horas; o Módulo 2 está em preparação e consistirá em seis encontros de duas horas e trinta minutos, com notebooks executáveis, tarefas com gabarito comentado e dados reais: obras literárias, metadados bibliográficos e indicadores socioeconômicos.
+
+**[Acesse as notas publicadas do curso →](https://jhlopesalves.github.io/eda_humanidades/)**
 
 O curso adota uma abordagem prática (*hands-on*): cada conceito é apresentado por meio de código executável, com incentivo à consulta da documentação oficial das bibliotecas utilizadas, da função `help()` e de fontes técnicas da comunidade, como o [Stack Overflow](https://stackoverflow.com/) e o [Cross Validated](https://stats.stackexchange.com/). Exemplos que envolvem aleatoriedade usam sementes fixas quando necessário. Algumas células demonstram erros intencionalmente e devem ser executadas e interpretadas individualmente. A proposta também é desenvolver autonomia para pesquisar, compreender e resolver problemas técnicos.
 
