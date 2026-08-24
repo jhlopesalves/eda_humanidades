@@ -2,6 +2,7 @@ project:
   type: website
   render:
     - index.qmd
+    - DATASETS.md
     - encontro_1/enc_1.ipynb
     - encontro_2/enc_2.ipynb
     - encontro_3/enc_3.ipynb
@@ -11,7 +12,13 @@ project:
 
 website:
   title: "Estatística Descritiva e Inferencial em Python para Humanidades"
+  site-url: https://jhlopesalves.github.io/eda_humanidades/
+  repo-url: https://github.com/jhlopesalves/eda_humanidades
+  repo-branch: main
+  repo-actions: [source, issue]
   search: true
+  page-navigation: true
+  back-to-top-navigation: true
   sidebar:
     style: docked
     contents:
@@ -20,17 +27,19 @@ website:
       - section: Módulo 1
         contents:
           - href: encontro_1/enc_1.ipynb
-            text: "Encontro 1: Primeiros passos: Colab, Python e lógica"
+            text: "1 - Primeiros Passos"
           - href: encontro_2/enc_2.ipynb
-            text: "Encontro 2: Fundamentos: listas, loops, condicionais e dicionários"
+            text: "2 - Fundamentos de Python"
           - href: encontro_3/enc_3.ipynb
-            text: "Encontro 3: Dicionários, métricas lexicais e funções"
+            text: "3 - Funções e métricas lexicais"
           - href: encontro_4/enc_4.ipynb
-            text: "Encontro 4: NumPy e pandas: do registro à tabela"
+            text: "4 - NumPy e pandas"
           - href: encontro_5/enc_5.ipynb
-            text: "Encontro 5: Estatística descritiva e visualização"
+            text: "5 - Estatística descritiva"
           - href: encontro_6/enc_6.ipynb
-            text: "Encontro 6: Forma, normalidade e dispersão"
+            text: "6 - Forma e dispersão"
+      - href: DATASETS.md
+        text: Dados e proveniência
 
 execute:
   enabled: false
@@ -38,3 +47,7 @@ execute:
 format:
   html:
     toc: true
+    code-copy: true
+    code-overflow: wrap
+
+lang: pt-BR

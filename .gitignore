@@ -15,4 +15,7 @@ venv/
 
 env.bak/
 venv.bak/
+/.quarto/
 _site/
+
+**/*.quarto_ipynb
