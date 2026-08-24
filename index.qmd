@@ -10,7 +10,7 @@ Este site reúne notas de curso sobre Python, análise de dados e estatística p
 
 O curso é voltado especialmente a linguistas e outros pesquisadores das humanidades que desejam desenvolver uma prática de análise de dados em Python. A abordagem é *hands-on*: os conceitos são apresentados em notebooks que podem ser lidos no site e executados no Google Colab. O percurso parte dos fundamentos de programação, avança pela manipulação e visualização de dados e chega à estatística descritiva, preparando a passagem posterior à inferência.
 
-## Módulo 1 — Python e estatística descritiva
+## Módulo 1 - Python e estatística descritiva
 
 1. [Primeiros passos](encontro_1/enc_1.ipynb)
 2. [Fundamentos de Python](encontro_2/enc_2.ipynb)
@@ -18,13 +18,13 @@ O curso é voltado especialmente a linguistas e outros pesquisadores das humanid
 4. [NumPy e pandas](encontro_4/enc_4.ipynb)
 
    ::: {.course-interlude}
-   [Interlúdio — Datasaurus Dozen](encontro_5/datasaurus.ipynb)
+   [Interlúdio - Datasaurus Dozen](encontro_5/datasaurus.ipynb)
    :::
 
 5. [Estatística descritiva e visualização](encontro_5/enc_5.ipynb)
 6. [Forma, normalidade e dispersão](encontro_6/enc_6.ipynb)
 
-## Módulo 2 — da descritiva à inferência
+## Módulo 2 - da descritiva à inferência
 
 O Módulo 2 está em preparação. Seu planejamento e seus materiais serão publicados quando estiverem concluídos.
 
