@@ -89,3 +89,34 @@ table.dataframe caption,
     grid-template-columns: 1fr;
   }
 }
+
+.author-profile {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.author-photo {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  object-position: 58% 30%;
+  border-radius: 0.5rem;
+}
+
+.author-bio p:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 767.98px) {
+  .author-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .author-photo {
+    width: 112px;
+    height: 112px;
+  }
+}
