@@ -62,7 +62,7 @@ O repositório reúne os notebooks, conjuntos de dados, tarefas, gabaritos e o h
 
 ::::
 
-## Sobre o autor e responsável pelo curso
+## Sobre o autor do curso
 
 ::: {.author-profile}
 
@@ -73,6 +73,8 @@ O repositório reúne os notebooks, conjuntos de dados, tarefas, gabaritos e o h
 Sou linguista e professor, formado em Letras - Inglês pela Universidade Federal de Minas Gerais (UFMG) e atualmente pós-graduando em Estatística e Ciência de Dados pela PUC Minas. Meus interesses incluem linguística, programação, análise de dados, estatística e métodos quantitativos aplicados às humanidades.
 
 [GitHub](https://github.com/jhlopesalves) · [LinkedIn](https://www.linkedin.com/in/jhonatan-alves-7a3abb346/) · [Substack](https://substack.com/@jhonatanhlopes)
+
+:::
 
 :::
 
