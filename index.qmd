@@ -82,8 +82,6 @@ Sou linguista e professor, formado em Letras - Inglês pela Universidade Federal
 
 Este curso foi desenvolvido no âmbito de um projeto de pesquisa da Faculdade de Letras da UFMG, financiado pela FAPEMIG. No projeto, além de desenvolver e ministrar este curso, trabalho com programação, processamento de dados e apoio às etapas quantitativas da pesquisa.
 
-:::
-
 ## Dados, código e licença
 
 Consulte [Dados e proveniência](DATASETS.md) para conhecer as fontes, transformações e limitações dos conjuntos utilizados. O [repositório no GitHub](https://github.com/jhlopesalves/eda_humanidades) contém o código e os materiais completos. O conteúdo autoral é distribuído sob a [licença MIT](https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE); dados e outros materiais de terceiros permanecem sujeitos aos termos de suas fontes.
