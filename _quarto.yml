@@ -52,9 +52,13 @@ execute:
 
 format:
   html:
+    theme:
+      light: cosmo
+      dark: darkly
     css: styles.css
     toc: true
     code-copy: true
     code-overflow: wrap
+    respect-user-color-scheme: true
 
 lang: pt-BR

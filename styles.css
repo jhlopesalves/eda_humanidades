@@ -120,3 +120,27 @@ table.dataframe caption,
     height: 112px;
   }
 }
+
+/* Light / dark theme toggle */
+
+.quarto-color-scheme-toggle .bi {
+  background: none !important;
+}
+
+.quarto-color-scheme-toggle .bi::before {
+  font-family: "bootstrap-icons" !important;
+  background: none !important;
+  width: auto !important;
+  height: auto !important;
+  content: "" !important;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+body.quarto-light .quarto-color-scheme-toggle .bi::before {
+  content: "\f497" !important;
+}
+
+body.quarto-dark .quarto-color-scheme-toggle .bi::before {
+  content: "\f5a2" !important;
+}
