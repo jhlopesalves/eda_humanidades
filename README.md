@@ -1,72 +1,70 @@
 # Estatística Descritiva e Inferencial em Python para Humanidades
 
-Notebooks e fontes do [site do curso](https://jhlopesalves.github.io/eda_humanidades/), ministrado por Jhonatan H. Lopes. O repositório contém os Encontros 1–10, o Datasaurus Dozen e a segunda parte do Encontro 8: doze notebooks de aula, além de dados, tarefas e gabaritos disponíveis.
+Curso de programação, análise de dados e estatística em Python voltado a estudantes e pesquisadores das humanidades. Os materiais combinam fundamentos de Python, análise exploratória, visualização e raciocínio estatístico com exemplos baseados em textos, metadados bibliográficos e dados socioeconômicos.
 
-A sequência e os exemplos preservam o curso ministrado. O site é gerado pelo Quarto com as saídas salvas dos notebooks; a renderização não executa Python. Para estudar e executar os exemplos no navegador, use o link do Google Colab no início de cada aula.
+**[Acessar o site do curso](https://jhlopesalves.github.io/eda_humanidades/)** · **[Começar pelo Encontro 1](https://jhlopesalves.github.io/eda_humanidades/encontro_1/enc_1.html)**
 
-## Renderização local
+## Sobre o curso
 
-Instale o [Quarto](https://quarto.org/docs/get-started/) 1.10.18, versão usada na verificação local e fixada no workflow do GitHub Pages. Na raiz do repositório:
+O curso foi desenvolvido para que programação e estatística sejam aprendidas em conjunto. O código não aparece apenas como ferramenta para produzir resultados: ele também permite examinar como medidas, gráficos e procedimentos estatísticos são construídos, quais decisões entram em uma análise e como os resultados podem ser interpretados.
+
+Os notebooks formam a fonte principal das aulas. O site publica o conteúdo em formato de leitura; no início de cada encontro há um link para abrir o respectivo notebook no Google Colab e executar ou modificar os exemplos.
+
+## Conteúdo
+
+### Módulo 1 — Python e estatística descritiva
+
+1. [Primeiros passos: Colab, Python e lógica](encontro_1/enc_1.ipynb)
+2. [Fundamentos de Python: listas, loops, condicionais e dicionários](encontro_2/enc_2.ipynb)
+3. [Funções e métricas lexicais](encontro_3/enc_3.ipynb)
+4. [NumPy e pandas](encontro_4/enc_4.ipynb)
+   - [Interlúdio: Datasaurus Dozen](encontro_5/datasaurus.ipynb)
+5. [Estatística descritiva e visualização](encontro_5/enc_5.ipynb)
+6. [Forma, normalidade e dispersão](encontro_6/enc_6.ipynb)
+
+### Módulo 2 — Associação, probabilidade e inferência
+
+7. [Relações entre variáveis](encontro_7/enc_7.ipynb)
+8. [Correlação e associação](encontro_8/enc_8.ipynb)
+   - [Parte 2: visualização](encontro_8/enc_8-parte2.ipynb)
+9. [Distribuição normal](encontro_9/enc_9.ipynb)
+10. [Amostragem e incerteza](encontro_10/enc_10.ipynb)
+
+## Como usar os materiais
+
+Para leitura, utilize preferencialmente o **site do curso**, que organiza os encontros em sequência e apresenta o código junto às saídas salvas.
+
+Para executar os exemplos, abra o encontro desejado e use o link **Abrir no Google Colab** disponível no início da aula.
+
+Este repositório reúne os notebooks-fonte, atividades, gabaritos, conjuntos de dados usados no curso e os arquivos necessários para publicar o site.
+
+## Equipe e projeto
+
+**Instrutor e responsável pelos materiais:** Jhonatan H. Lopes  
+**Coordenação do projeto:** Deise Prina Dutra
+
+Curso desenvolvido no âmbito de um projeto da **Faculdade de Letras da Universidade Federal de Minas Gerais (UFMG)**, com apoio da **FAPEMIG — APQ-01173-22**.
+
+## Dados e proveniência
+
+As fontes conhecidas dos conjuntos de dados, transformações identificáveis e lacunas de documentação estão registradas em [Dados e proveniência](DATASETS.md).
+
+Quando o histórico do projeto não permite reconstruir com segurança a origem, a transformação ou os termos de um arquivo, essa limitação é registrada explicitamente em vez de ser preenchida por suposição.
+
+## Licença
+
+Consulte [LICENSE](LICENSE) para a licença atualmente adotada pelo repositório.
+
+Textos, imagens, metadados e conjuntos de dados de terceiros permanecem sujeitos aos termos de suas respectivas fontes; a presença de um arquivo neste repositório não o relicencia. Consulte também [Dados e proveniência](DATASETS.md).
+
+## Desenvolvimento do site
+
+O site é gerado com [Quarto](https://quarto.org/) e publicado pelo GitHub Pages.
+
+Para pré-visualizar localmente, com Quarto instalado:
 
 ```bash
 quarto preview
 ```
 
-Para gerar os arquivos estáticos em `_site/`:
-
-```bash
-quarto render
-```
-
-Não é necessário instalar as bibliotecas Python para gerar o site. `execute.enabled: false` em `_quarto.yml` mantém separadas a execução dos notebooks e a publicação de suas saídas.
-
-## Execução e verificação dos notebooks
-
-O ambiente local foi verificado com Python 3.14.7. As dependências diretas usadas estão fixadas em `requirements-notebooks.txt`; isso registra o ambiente testado, sem garantir resultados idênticos em outros sistemas ou no Colab.
-
-Com [uv](https://docs.astral.sh/uv/):
-
-```bash
-uv venv --python 3.14
-uv pip install -r requirements-notebooks.txt
-uv run python scripts/check_course.py
-```
-
-O último comando verifica o formato dos notebooks, a sequência das contagens de execução e os erros salvos. Depois de `quarto render`, verifique também as páginas, figuras e links locais:
-
-```bash
-uv run python scripts/check_course.py --site
-```
-
-Para executar todas as aulas em kernels novos e verificar exemplos numéricos:
-
-```bash
-uv run python scripts/check_course.py --execute
-```
-
-Essa verificação usa os arquivos locais, executa cada notebook em seu próprio diretório e não altera as fontes nem as saídas salvas. O `KeyError` do Encontro 2 é intencional e está marcado com a tag `raises-exception`. Outros erros interrompem a verificação. Para editar e renovar saídas, abra os notebooks em um kernel deste ambiente no Jupyter ou no VS Code e execute as células em ordem, interpretando o erro deliberado.
-
-## Estrutura
-
-| Caminho | Conteúdo |
-| :--- | :--- |
-| `encontro_1/` a `encontro_10/` | Notebooks de aula; `data/` e `homework/` onde existem |
-| `encontro_5/datasaurus.ipynb` | Demonstração metodológica com o Datasaurus Dozen |
-| `encontro_8/enc_8-parte2.ipynb` | Associação e visualização com o Gapminder |
-| `index.qmd`, `about.qmd` | Página inicial e informações sobre o curso |
-| `_quarto.yml`, `styles.css` | Renderização, navegação e apresentação |
-| `DATASETS.md` | Fontes, transformações conhecidas e lacunas de proveniência |
-| `scripts/check_course.py` | Verificações de fontes, execução e site renderizado |
-| `.github/workflows/publish.yml` | Publicação no GitHub Pages após alterações em `main` |
-
-Os arquivos de `_site/`, `.quarto/` e `.venv/` são locais e ignorados pelo Git. A lista explícita em `_quarto.yml` publica as aulas e as páginas do curso; tarefas e gabaritos continuam acessíveis pelos links das aulas.
-
-## Manutenção
-
-Ao alterar uma aula, mantenha legíveis tanto o notebook quanto sua página estática. Preserve as implementações introdutórias e os erros que demonstram conceitos; use comentários `#|` apenas para opções de apresentação do Quarto. Mudanças de código exigem nova execução e revisão das saídas. Mudanças de títulos, links ou CSS exigem renderização e inspeção no navegador, inclusive em tela estreita e nos dois temas.
-
-O [registro da revisão para publicação](docs/publication-review.md) descreve as correções, a verificação e as limitações desta passagem. As tarefas e os gabaritos não passaram por uma revisão pedagógica completa.
-
-## Licença
-
-A [licença MIT](LICENSE) existente aplica-se ao material autoral. Textos, imagens, metadados e conjuntos de dados de terceiros mantêm os termos de suas fontes; a presença no repositório não os relicencia. Consulte [DATASETS.md](DATASETS.md) antes de redistribuí-los.
+A publicação usa as saídas já salvas nos notebooks; o processo de renderização do site não reexecuta automaticamente as aulas.
