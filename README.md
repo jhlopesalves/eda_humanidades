@@ -50,7 +50,7 @@ Este repositório reúne os notebooks-fonte, atividades, gabaritos e conjuntos d
 
 ## Equipe e projeto
 
-**Instrutor e responsável pelos materiais:** Jhonatan H. Lopes  
+**Instrutor e responsável pelos materiais:** Jhonatan H. Lopes<br>
 **Coordenação do projeto:** Deise Prina Dutra
 
 Curso desenvolvido no âmbito de um projeto da **Faculdade de Letras da Universidade Federal de Minas Gerais (UFMG)**, com apoio da **FAPEMIG — APQ-01173-22**.
