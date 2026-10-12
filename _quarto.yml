@@ -10,6 +10,11 @@ project:
     - encontro_5/datasaurus.ipynb
     - encontro_5/enc_5.ipynb
     - encontro_6/enc_6.ipynb
+    - encontro_7/enc_7.ipynb
+    - encontro_8/enc_8.ipynb
+    - encontro_8/enc_8-parte2.ipynb
+    - encontro_9/enc_9.ipynb
+    - encontro_10/enc_10.ipynb
 
 website:
   title: "Estatística Descritiva e Inferencial em Python para Humanidades"
@@ -31,7 +36,7 @@ website:
       - section: Módulo 1
         contents:
           - href: encontro_1/enc_1.ipynb
-            text: "1 - Primeiros Passos"
+            text: "1 - Primeiros passos"
           - href: encontro_2/enc_2.ipynb
             text: "2 - Fundamentos de Python"
           - href: encontro_3/enc_3.ipynb
@@ -44,6 +49,18 @@ website:
             text: "5 - Estatística descritiva"
           - href: encontro_6/enc_6.ipynb
             text: "6 - Forma e dispersão"
+      - section: Módulo 2
+        contents:
+          - href: encontro_7/enc_7.ipynb
+            text: "7 - Relações entre variáveis"
+          - href: encontro_8/enc_8.ipynb
+            text: "8 - Correlação e associação"
+          - href: encontro_8/enc_8-parte2.ipynb
+            text: "8, parte 2 - Visualização"
+          - href: encontro_9/enc_9.ipynb
+            text: "9 - Distribuição normal"
+          - href: encontro_10/enc_10.ipynb
+            text: "10 - Amostragem e incerteza"
       - href: DATASETS.md
         text: Dados e proveniência
 
