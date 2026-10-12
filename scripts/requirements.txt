@@ -1,4 +1,4 @@
-# Direct dependencies of the verified Python 3.14.7 notebook environment.
+# Dependencies for local notebook execution and course validation.
 numpy==2.5.4
 pandas==3.0.6
 matplotlib==3.11.2

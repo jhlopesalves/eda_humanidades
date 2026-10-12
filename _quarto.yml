@@ -80,7 +80,7 @@ format:
     theme:
       light: cosmo
       dark: darkly
-    css: styles.css
+    css: assets/css/site.css
     fontsize: 18px
     linestretch: 1.6
     grid:

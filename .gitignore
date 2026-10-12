@@ -1,21 +1,19 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
-*.py[codz]
-*$py.class
+*.py[cod]
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Jupyter
+.ipynb_checkpoints/
 
-# Environments
-
-.envrc
-.venv
-
+# Local environments
+.venv/
 venv/
+.envrc
 
-env.bak/
-venv.bak/
-/.quarto/
+# Quarto
+.quarto/
 _site/
-
 **/*.quarto_ipynb
+
+# Operating-system artefacts
+.DS_Store

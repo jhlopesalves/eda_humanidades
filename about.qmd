@@ -7,7 +7,7 @@ toc: false
 
 ::: {.author-profile}
 
-<img src="assets/profile_pic.jpeg" class="author-photo" alt="Jhonatan Lopes">
+<img src="assets/images/jhonatan-lopes.jpeg" class="author-photo" alt="Jhonatan Lopes">
 
 ::: {.author-bio}
 
