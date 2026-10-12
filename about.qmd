@@ -11,7 +11,7 @@ toc: false
 
 ::: {.author-bio}
 
-Sou linguista e professor, formado em Letras — Inglês pela Universidade Federal de Minas Gerais (UFMG) e atualmente pós-graduando em Estatística e Ciência de Dados pela PUC Minas.
+Jhonatan H. Lopes é linguista e professor, formado em Letras–Inglês pela UFMG e com pós-graduação em Estatística e Ciência de Dados em andamento na PUC Minas. Seu trabalho combina programação, análise de dados e métodos quantitativos aplicados à linguagem e às humanidades.
 
 [GitHub](https://github.com/jhlopesalves) · [LinkedIn](https://www.linkedin.com/in/jhonatan-alves-7a3abb346/) · [Substack](https://substack.com/@jhonatanhlopes)
 
