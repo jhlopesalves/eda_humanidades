@@ -1,0 +1,30 @@
+---
+title: "Sobre o curso"
+toc: false
+---
+
+## Instrutor
+
+::: {.author-profile}
+
+<img src="assets/profile_pic.jpeg" class="author-photo" alt="Jhonatan Lopes">
+
+::: {.author-bio}
+
+Sou linguista e professor, formado em Letras — Inglês pela Universidade Federal de Minas Gerais (UFMG) e atualmente pós-graduando em Estatística e Ciência de Dados pela PUC Minas.
+
+[GitHub](https://github.com/jhlopesalves) · [LinkedIn](https://www.linkedin.com/in/jhonatan-alves-7a3abb346/) · [Substack](https://substack.com/@jhonatanhlopes)
+
+:::
+
+:::
+
+## Projeto
+
+Este curso foi desenvolvido no âmbito de um projeto de pesquisa da Faculdade de Letras da UFMG, financiado pela FAPEMIG.
+
+## Dados e licença
+
+O [repositório no GitHub](https://github.com/jhlopesalves/eda_humanidades) contém os notebooks, os conjuntos de dados e as atividades. As fontes, transformações conhecidas e lacunas de documentação estão registradas em [Dados e proveniência](DATASETS.md).
+
+O material autoral é distribuído sob a [licença MIT](https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE), já adotada pelo repositório. Textos, imagens, metadados e conjuntos de dados de terceiros permanecem sujeitos aos termos de suas fontes.

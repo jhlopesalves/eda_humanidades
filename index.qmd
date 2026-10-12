@@ -1,87 +1,44 @@
 ---
 title: "Estatística Descritiva e Inferencial em Python para Humanidades"
+toc: false
 ---
 
-Curso de programação, análise de dados e estatística em Python voltado a estudantes e pesquisadores das humanidades. O site reúne notas de aula, notebooks, exercícios, conjuntos de dados e outros materiais produzidos ao longo do curso.
+Programação, análise de dados e estatística em Python para estudantes e pesquisadores das humanidades. Os exemplos incluem textos, metadados bibliográficos e indicadores socioeconômicos.
 
-[Começar pelo Encontro 1](encontro_1/enc_1.ipynb) · [Repositório no GitHub](https://github.com/jhlopesalves/eda_humanidades)
+**[Começar pelo Encontro 1](encontro_1/enc_1.ipynb)**
 
-## Sobre o curso
+**Instrutor:** [Jhonatan Lopes](about.qmd#instrutor).
 
-O curso é organizado em dois módulos. O primeiro apresenta fundamentos de Python, manipulação e visualização de dados e estatística descritiva. O segundo, ainda em desenvolvimento, será dedicado à inferência estatística.
+As aulas combinam fundamentos de Python e raciocínio estatístico: como calcular uma medida, o que ela representa e quando uma comparação é justificável. O primeiro módulo apresenta programação e estatística descritiva; o segundo aborda associação entre variáveis, distribuições de probabilidade, amostragem e incerteza.
 
-As aulas utilizam notebooks Jupyter como material principal. Os notebooks podem ser lidos diretamente neste site ou abertos no Google Colab para executar o código, alterar exemplos e refazer as análises.
+## Encontros
 
-## Objetivos
+### Módulo 1 — Python e estatística descritiva
 
-O objetivo do curso é desenvolver a autonomia dos participantes para ler, modificar e produzir análises quantitativas em Python. As aulas combinam programação e estatística, de modo que o código seja usado não apenas para obter resultados, mas também para examinar como esses resultados são produzidos e como devem ser interpretados.
-
-Os exemplos e exercícios utilizam principalmente textos, metadados bibliográficos e outros tipos de dados próximos à pesquisa em linguística e humanidades.
-
-## Conteúdo
-
-### Módulo 1 - Python e estatística descritiva
-
-1. [Primeiros passos - Colab, Python e lógica](encontro_1/enc_1.ipynb)
-2. [Fundamentos - listas, loops, condicionais e dicionários](encontro_2/enc_2.ipynb)
-3. [Dicionários, métricas lexicais e funções](encontro_3/enc_3.ipynb)
-4. [NumPy e pandas - do registro à tabela](encontro_4/enc_4.ipynb)
+1. [Primeiros passos: Colab, Python e lógica](encontro_1/enc_1.ipynb)
+2. [Fundamentos de Python: listas, loops, condicionais e dicionários](encontro_2/enc_2.ipynb)
+3. [Funções e métricas lexicais](encontro_3/enc_3.ipynb)
+4. [NumPy e pandas](encontro_4/enc_4.ipynb)
 
    ::: {.course-interlude}
-   [Interlúdio - Datasaurus Dozen](encontro_5/datasaurus.ipynb)
+   [Interlúdio: Datasaurus Dozen](encontro_5/datasaurus.ipynb)
    :::
 
 5. [Estatística descritiva e visualização](encontro_5/enc_5.ipynb)
 6. [Forma, normalidade e dispersão](encontro_6/enc_6.ipynb)
 
-### Módulo 2 - Inferência estatística
+### Módulo 2 — Associação, probabilidade e inferência
 
-O Módulo 2 está em desenvolvimento. Os materiais serão publicados à medida que os encontros forem concluídos.
+7. [Relações entre variáveis](encontro_7/enc_7.ipynb)
 
-## Materiais
+8. [Correlação e associação](encontro_8/enc_8.ipynb)
 
-:::: {.resource-grid}
+   ::: {.course-interlude}
+   [Parte 2: visualização](encontro_8/enc_8-parte2.ipynb)
+   :::
 
-::: {.resource-card}
-### Website
+9. [Distribuição normal](encontro_9/enc_9.ipynb)
 
-As páginas deste site reúnem as notas de aula, o código, os resultados, as tabelas e as figuras presentes nos notebooks.
-:::
+10. [Amostragem e incerteza](encontro_10/enc_10.ipynb)
 
-::: {.resource-card}
-### [Google Colab](https://colab.research.google.com/github/jhlopesalves/eda_humanidades/blob/main/encontro_1/enc_1.ipynb)
-
-Os notebooks podem ser abertos no Colab para executar o código, alterar exemplos e refazer as análises.
-:::
-
-::: {.resource-card}
-### [GitHub](https://github.com/jhlopesalves/eda_humanidades)
-
-O repositório reúne os notebooks, conjuntos de dados, tarefas, gabaritos e o histórico de desenvolvimento dos materiais.
-:::
-
-::::
-
-## Sobre o autor do curso
-
-::: {.author-profile}
-
-<img src="assets/profile_pic.jpeg" class="author-photo" alt="Jhonatan Lopes">
-
-::: {.author-bio}
-
-Sou linguista e professor, formado em Letras - Inglês pela Universidade Federal de Minas Gerais (UFMG) e atualmente pós-graduando em Estatística e Ciência de Dados pela PUC Minas.
-
-[GitHub](https://github.com/jhlopesalves) · [LinkedIn](https://www.linkedin.com/in/jhonatan-alves-7a3abb346/) · [Substack](https://substack.com/@jhonatanhlopes)
-
-:::
-
-:::
-
-## Sobre o projeto
-
-Este curso foi desenvolvido no âmbito de um projeto de pesquisa da Faculdade de Letras da UFMG, financiado pela FAPEMIG.
-
-## Dados, código e licença
-
-Consulte [Dados e proveniência](DATASETS.md) para conhecer as fontes, transformações e limitações dos conjuntos utilizados. O [repositório no GitHub](https://github.com/jhlopesalves/eda_humanidades) contém o código e os materiais completos. O conteúdo autoral é distribuído sob a [licença MIT](https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE); dados e outros materiais de terceiros permanecem sujeitos aos termos de suas fontes.
+As páginas mostram o código e as saídas salvas. Para executar ou modificar os exemplos, abra o notebook pelo link do Google Colab no início de cada encontro. As tarefas e os gabaritos disponíveis ficam ao final das aulas.

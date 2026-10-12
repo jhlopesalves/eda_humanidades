@@ -2,6 +2,7 @@ project:
   type: website
   render:
     - index.qmd
+    - about.qmd
     - DATASETS.md
     - encontro_1/enc_1.ipynb
     - encontro_2/enc_2.ipynb
@@ -18,13 +19,18 @@ project:
 
 website:
   title: "Estatística Descritiva e Inferencial em Python para Humanidades"
+  description: "Notas de aula e notebooks de programação, análise de dados e estatística em Python para as humanidades."
   site-url: https://jhlopesalves.github.io/eda_humanidades/
   repo-url: https://github.com/jhlopesalves/eda_humanidades
   repo-branch: main
   search: true
   page-navigation: true
   back-to-top-navigation: true
+  page-footer:
+    left: "[Sobre o curso](/about.qmd)"
+    right: "[Dados e proveniência](/DATASETS.md) · [Licença MIT](https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE)"
   sidebar:
+    title: "Estatística em Python"
     style: docked
     tools:
       - icon: github
@@ -44,7 +50,7 @@ website:
           - href: encontro_4/enc_4.ipynb
             text: "4 - NumPy e pandas"
           - href: encontro_5/datasaurus.ipynb
-            text: "Interlúdio — Datasaurus Dozen"
+            text: "Interlúdio: Datasaurus Dozen"
           - href: encontro_5/enc_5.ipynb
             text: "5 - Estatística descritiva"
           - href: encontro_6/enc_6.ipynb
@@ -63,6 +69,8 @@ website:
             text: "10 - Amostragem e incerteza"
       - href: DATASETS.md
         text: Dados e proveniência
+      - href: about.qmd
+        text: Sobre o curso
 
 execute:
   enabled: false
@@ -73,9 +81,16 @@ format:
       light: cosmo
       dark: darkly
     css: styles.css
+    fontsize: 18px
+    linestretch: 1.6
+    grid:
+      sidebar-width: 250px
+      body-width: 760px
+      margin-width: 220px
     toc: true
     code-copy: true
     code-overflow: wrap
     respect-user-color-scheme: true
+    smooth-scroll: false
 
 lang: pt-BR
