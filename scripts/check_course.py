@@ -84,7 +84,8 @@ assert np.isclose(
         gapminder_2007['lifeExp'], method='spearman'
     ),
 )
-assert len(ax.artists) >= 1
+assert len(ax.artists) == 0
+assert ax.get_legend().get_title().get_text() == 'Continentes'
 assert len(population_labels) > 1
 """,
     "encontro_9/enc_9.ipynb": """
