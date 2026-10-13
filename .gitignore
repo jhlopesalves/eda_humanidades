@@ -11,7 +11,7 @@ venv/
 .envrc
 
 # Quarto
-.quarto/
+/.quarto/
 _site/
 **/*.quarto_ipynb
 

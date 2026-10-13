@@ -26,9 +26,59 @@ website:
   search: true
   page-navigation: true
   back-to-top-navigation: true
+  open-graph: true
   page-footer:
-    left: "[Sobre o curso](/about.qmd)"
-    right: "[Dados e proveniência](/DATASETS.md) · [Licença MIT](https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE)"
+    # Official positive marks, kept unaltered from these identity resources:
+    # https://www.letras.ufmg.br/site/pt-BR/institucional/marca
+    # https://fapemig.br/difusao-do-conhecimento/imprensa/manual-da-marca
+    # Footer regions accept Markdown; raw blocks preserve the HTML indentation.
+    left: |
+      ```{=html}
+      <div class="course-footer-institutions">
+        <p>
+          Faculdade de Letras · Universidade Federal de Minas Gerais<br>
+          <span class="course-footer-support">Apoio: FAPEMIG — APQ-01173-22.</span>
+        </p>
+        <div class="course-footer-logos">
+          <img
+            src="/assets/logos/fale-ufmg.png"
+            class="course-logo-fale"
+            width="400"
+            height="141"
+            alt=""
+          >
+          <img
+            src="/assets/logos/fapemig.png"
+            class="course-logo-fapemig"
+            width="1324"
+            height="1035"
+            alt=""
+          >
+        </div>
+      </div>
+      ```
+    center: |
+      ```{=html}
+      <a
+        class="course-footer-repository"
+        href="https://github.com/jhlopesalves/eda_humanidades"
+      >
+        <i class="bi bi-github" aria-hidden="true"></i>
+        <span>Repositório do curso</span>
+      </a>
+      ```
+    right: |
+      ```{=html}
+      <div class="course-footer-reuse">
+        <p class="course-footer-label">Uso e reutilização</p>
+        <p>
+          <a href="/DATASETS.md">Dados e proveniência</a><br>
+          <a href="https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE">
+            Licença MIT
+          </a>
+        </p>
+      </div>
+      ```
   sidebar:
     title: "Estatística em Python"
     style: docked
@@ -84,7 +134,7 @@ format:
     fontsize: 18px
     linestretch: 1.6
     grid:
-      sidebar-width: 250px
+      sidebar-width: 300px
       body-width: 760px
       margin-width: 220px
     toc: true

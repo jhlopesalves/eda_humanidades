@@ -1,6 +1,7 @@
 ---
 title: "Estatística Descritiva e Inferencial em Python para Humanidades"
 toc: false
+page-navigation: false
 ---
 
 Programação, análise de dados e estatística em Python para estudantes e pesquisadores das humanidades. Os exemplos incluem textos, metadados bibliográficos e indicadores socioeconômicos.
@@ -13,32 +14,98 @@ As aulas combinam fundamentos de Python e raciocínio estatístico: como calcula
 
 ## Encontros
 
-### Módulo 1 — Python e estatística descritiva
+### Módulo 1 — Python e estatística descritiva {.course-map-module}
 
-1. [Primeiros passos: Colab, Python e lógica](encontro_1/enc_1.ipynb)
-2. [Fundamentos de Python: listas, loops, condicionais e dicionários](encontro_2/enc_2.ipynb)
-3. [Funções e métricas lexicais](encontro_3/enc_3.ipynb)
-4. [NumPy e pandas](encontro_4/enc_4.ipynb)
+```{=html}
+<ul class="course-map" role="list" aria-label="Módulo 1">
+  <li class="course-map-row">
+    <span class="course-map-number">01</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_1/enc_1.ipynb">Primeiros passos</a>
+      <p>Colab, Markdown, Python e lógica.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">02</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_2/enc_2.ipynb">Fundamentos de Python</a>
+      <p>Listas, loops, condicionais e dicionários.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">03</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_3/enc_3.ipynb">Funções e métricas lexicais</a>
+      <p>Funções, texto e métricas lexicais.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">04</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_4/enc_4.ipynb">NumPy e pandas</a>
+      <p>Arrays, tabelas e operações com dados.</p>
+    </div>
+  </li>
+  <li class="course-map-row course-map-interlude">
+    <div class="course-map-entry">
+      <span class="course-map-label">Interlúdio — </span><a class="course-map-title" href="encontro_5/datasaurus.ipynb">Datasaurus Dozen</a>
+      <p>Resumos numéricos, visualização e estrutura dos dados.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">05</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_5/enc_5.ipynb">Estatística descritiva e visualização</a>
+      <p>Distribuições, variabilidade e visualização.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">06</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_6/enc_6.ipynb">Forma, normalidade e dispersão</a>
+      <p>Forma das distribuições e medidas de dispersão.</p>
+    </div>
+  </li>
+</ul>
+```
 
-   ::: {.course-interlude}
-   [Interlúdio: Datasaurus Dozen](encontro_5/datasaurus.ipynb)
-   :::
+### Módulo 2 — Associação, probabilidade e inferência {.course-map-module}
 
-5. [Estatística descritiva e visualização](encontro_5/enc_5.ipynb)
-6. [Forma, normalidade e dispersão](encontro_6/enc_6.ipynb)
-
-### Módulo 2 — Associação, probabilidade e inferência
-
-7. [Relações entre variáveis](encontro_7/enc_7.ipynb)
-
-8. [Correlação e associação](encontro_8/enc_8.ipynb)
-
-   ::: {.course-interlude}
-   [Parte 2: visualização](encontro_8/enc_8-parte2.ipynb)
-   :::
-
-9. [Distribuição normal](encontro_9/enc_9.ipynb)
-
-10. [Amostragem e incerteza](encontro_10/enc_10.ipynb)
-
-As páginas mostram o código e as saídas salvas. Para executar ou modificar os exemplos, abra o notebook pelo link do Google Colab no início de cada encontro. As tarefas e os gabaritos disponíveis ficam ao final das aulas.
+```{=html}
+<ul class="course-map" role="list" aria-label="Módulo 2">
+  <li class="course-map-row">
+    <span class="course-map-number">07</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_7/enc_7.ipynb">Relações entre variáveis</a>
+      <p>Relações entre variáveis e transformação de escalas.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">08</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_8/enc_8.ipynb">Correlação e associação</a>
+      <p>Correlação, associação e sensibilidade.</p>
+    </div>
+  </li>
+  <li class="course-map-row course-map-interlude">
+    <div class="course-map-entry">
+      <span class="course-map-label">Encontro 8, parte 2 — </span><a class="course-map-title" href="encontro_8/enc_8-parte2.ipynb">Visualização</a>
+      <p>Heatmaps, gráficos de dispersão e construção visual.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">09</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_9/enc_9.ipynb">Distribuição normal</a>
+      <p>Probabilidade e distribuição normal.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">10</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_10/enc_10.ipynb">Amostragem e incerteza</a>
+      <p>Amostragem, erro padrão e bootstrap.</p>
+    </div>
+  </li>
+</ul>
+```
