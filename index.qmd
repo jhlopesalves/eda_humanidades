@@ -107,5 +107,11 @@ As aulas combinam fundamentos de Python e raciocínio estatístico: como calcula
       <p>Amostragem, erro padrão e bootstrap.</p>
     </div>
   </li>
+  <li class="course-map-row course-map-interlude">
+    <div class="course-map-entry">
+      <span class="course-map-label">Encontro 10, parte 2 — </span><a class="course-map-title" href="encontro_10/enc_10-parte2.ipynb">Bootstrap, erro padrão e intervalos de confiança</a>
+      <p>Reamostragem por participantes e palavras com dados de decisão lexical.</p>
+    </div>
+  </li>
 </ul>
 ```

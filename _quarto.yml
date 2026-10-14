@@ -118,6 +118,8 @@ website:
             text: "9 - Distribuição normal"
           - href: encontro_10/enc_10.ipynb
             text: "10 - Amostragem e incerteza"
+          - href: encontro_10/enc_10-parte2.ipynb
+            text: "10, parte 2 - Bootstrap e intervalos"
       - href: DATASETS.md
         text: Dados e proveniência
       - href: about.qmd

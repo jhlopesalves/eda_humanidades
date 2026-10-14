@@ -39,6 +39,7 @@ Cada encontro pode ser lido diretamente no site e também aberto no Google Colab
    - [Parte 2: visualização](encontro_8/enc_8-parte2.ipynb)
 9. [Distribuição normal](encontro_9/enc_9.ipynb)
 10. [Amostragem e incerteza](encontro_10/enc_10.ipynb)
+    - [Parte 2: bootstrap, erro padrão e intervalos de confiança](encontro_10/enc_10-parte2.ipynb)
 
 ## Como usar os materiais
 

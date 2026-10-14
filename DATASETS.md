@@ -65,7 +65,11 @@ O arquivo não fornece identificadores de participantes ou de itens que permitam
 
 ## Decisão lexical — `encontro_10/data/lexdec.csv`
 
-O arquivo tem 1.659 linhas e 28 colunas, incluindo `Subject`, `RT`, `Word`, `Frequency` e `Length`. Ele está preservado, mas não é lido pelas aulas ou atividades atuais. A origem, os termos de uso e as transformações não estão documentados nesta cópia. Em particular, o nome `RT` não basta para estabelecer a unidade nem a escala da medida.
+O arquivo tem 1.659 linhas e 28 colunas, incluindo `Subject`, `RT`, `Word`, `Frequency` e `Length`. É usado no [Encontro 10, parte 2](encontro_10/enc_10-parte2.ipynb), que estuda bootstrap com resumos por participante e por palavra.
+
+O [manual do pacote `languageR`](https://cran.r-project.org/web/packages/languageR/languageR.pdf#page=54) descreve `RT` e `Frequency` como valores já transformados em logaritmos. A aula mantém essas escalas. O arquivo `encontro_10/data/lexdec_colunas.csv` fornece o glossário e a correspondência entre os nomes originais e os usados no código.
+
+O histórico de aquisição e exportação da cópia local e seus termos específicos de redistribuição não estão registrados. A documentação do conjunto de referência não reconstitui esse histórico.
 
 ## Textos e registros incorporados às aulas
 

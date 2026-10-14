@@ -105,6 +105,29 @@ assert (
 )
 assert abs(bootstrap_result.standard_error - model_standard_error) < 0.002
 """,
+    "encontro_10/enc_10-parte2.ipynb": """
+assert len(lexdec_df) == 1659 and len(correct_df) == 1594
+assert n_participants == 21 and n_words == 79
+assert np.isclose(participant_mean, participant_df['mean_rt'].mean())
+assert np.isclose(participant_median, participant_df['mean_rt'].median())
+assert np.isclose(
+    observed_rho,
+    word_df['frequency_log'].rank().corr(word_df['mean_rt'].rank()),
+)
+assert np.allclose(
+    [participant_trial_mean, word_trial_mean], correct_df['rt_log'].mean()
+)
+assert not np.isclose(participant_mean, observed_trial_mean, rtol=0, atol=1e-6)
+for result in [mean_bootstrap_result, median_bootstrap_result,
+               spearman_bootstrap_result]:
+    assert len(result.bootstrap_distribution) == n_bootstrap
+    assert np.isfinite(result.bootstrap_distribution).all()
+    assert np.isclose(
+        result.standard_error, result.bootstrap_distribution.std(ddof=1)
+    )
+    assert result.confidence_interval.low < result.confidence_interval.high
+assert spearman_bootstrap_result.confidence_interval.high < 0
+""",
     "encontro_5/datasaurus.ipynb": """
 assert len(datasaurus_df) == 1846
 assert datasaurus_df['dataset'].nunique() == 13
