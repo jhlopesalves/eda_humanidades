@@ -16,6 +16,7 @@ project:
     - encontro_8/enc_8-parte2.ipynb
     - encontro_9/enc_9.ipynb
     - encontro_10/enc_10.ipynb
+    - encontro_10/enc_10-parte2.ipynb
 
 website:
   title: "Estatística Descritiva e Inferencial em Python para Humanidades"
