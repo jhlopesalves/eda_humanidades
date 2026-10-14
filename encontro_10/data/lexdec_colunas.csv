@@ -1,0 +1,29 @@
+original,coluna,descricao,nivel
+Subject,subject,Identificador do participante.,participante
+RT,rt_log,"Tempo de reação do participante nesta tentativa, transformado em escala logarítmica.",tentativa
+Trial,trial,Posição da tentativa na sequência experimental.,tentativa
+Sex,sex,"Sexo do participante, codificado como F ou M.",participante
+NativeLanguage,native_language,Indica se a língua nativa do participante é inglês ou outra língua.,participante
+Correct,correct,Indica se o participante classificou corretamente o estímulo na tarefa de decisão lexical.,tentativa
+PrevType,previous_type,Tipo do estímulo apresentado na tentativa anterior: palavra ou não palavra.,tentativa
+PrevCorrect,previous_correct,Indica se a resposta da tentativa anterior foi correta.,tentativa
+Word,word,Palavra apresentada ao participante.,palavra
+Frequency,frequency_log,"Frequência do lema no banco lexical CELEX, transformada em escala logarítmica.",palavra
+FamilySize,family_size_log,"Tamanho da família morfológica da palavra, transformado em escala logarítmica.",palavra
+SynsetCount,synset_count_log,"Número de synsets do WordNet nos quais a palavra aparece, transformado em escala logarítmica.",palavra
+Length,word_length,Comprimento da palavra em número de letras.,palavra
+Class,semantic_class,Classe semântica do referente: animal ou planta.,palavra
+FreqSingular,singular_frequency,Frequência da forma singular da palavra no CELEX.,palavra
+FreqPlural,plural_frequency,Frequência da forma plural da palavra no CELEX.,palavra
+DerivEntropy,derivational_entropy,Entropia de Shannon da distribuição de frequências dos membros da família morfológica da palavra.,palavra
+Complex,morphological_complexity,Classificação da complexidade morfológica da palavra: simplex ou complex.,palavra
+rInfl,inflection_ratio_log,Logaritmo da razão entre a frequência da forma singular e a frequência da forma plural.,palavra
+meanRT,item_mean_rt,"Tempo de reação médio para essa palavra, calculado entre os participantes.",agregado_por_palavra
+SubjFreq,subjective_frequency,Frequência subjetiva média atribuída à palavra pelos participantes.,agregado_por_palavra
+meanSize,mean_size_rating,Avaliação média do tamanho físico do referente da palavra.,agregado_por_palavra
+meanWeight,mean_weight_rating,Avaliação média do peso físico do referente da palavra.,agregado_por_palavra
+BNCw,bnc_written_frequency_log,"Frequência da palavra na parte escrita do British National Corpus, transformada em escala logarítmica.",palavra
+BNCc,bnc_context_frequency_log,"Frequência da palavra na parte context-governed da fala no British National Corpus, transformada em escala logarítmica.",palavra
+BNCd,bnc_demographic_frequency_log,"Frequência da palavra na parte demográfica da fala no British National Corpus, transformada em escala logarítmica.",palavra
+BNCcRatio,bnc_context_written_ratio_log,"Razão entre as frequências da palavra na parte context-governed da fala e na parte escrita do BNC, ajustada para diferenças de tamanho entre os corpora.",palavra
+BNCdRatio,bnc_demographic_written_ratio_log,"Razão entre as frequências da palavra na parte demográfica da fala e na parte escrita do BNC, ajustada para diferenças de tamanho entre os corpora.",palavra
