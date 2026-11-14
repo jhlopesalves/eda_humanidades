@@ -72,7 +72,7 @@ accident.
 - **Consequence:** nothing can be published from `main`, including fixes to other lessons.
 - **Proposed correction:** give cell 25 a unique label, `fig-autores-abstract-log-comparacao`. Keep the cell.
 - **Verification:** `quarto render` exits 0, and the page contains both figure IDs.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `a0e66a1`. `quarto render` now exits 0, and both figure IDs are present on the page.
 
 #### E7-02 — Quarto options ignored in cells that begin with a blank line
 - **Location:** cells 3 (`218040c3`), 10 (`hL90LTkRyYr-`) and 27 (`QvatqeEio0wE`).
@@ -81,7 +81,7 @@ accident.
 - **Consequence:** two figures lose their caption and alt text (an accessibility regression), and the cross-reference targets disappear.
 - **Proposed correction:** remove the leading blank line. This does not change any Python code.
 - **Verification:** the figure IDs are present in the HTML, and the site check counts captions for the plots.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `a0e66a1`. The rendered page has no literal `#|` lines; the imports fold again, and all five figures have ID, caption and alt text.
 
 #### E7-03 — Colab badge lost its Portuguese description and runtime note
 - **Location:** cell 0 (no `id`).
@@ -89,7 +89,7 @@ accident.
 - **Evidence:** before `13f09e2`, the cell had `alt="Abrir no Google Colab"` and `<p class="lesson-runtime-note">…</p>`. Now it has `alt="Open In Colab"` and no note. The site check fails on this page. The cell also lacks the `id` that nbformat 4.5 requires (`MissingIDFieldWarning`).
 - **Proposed correction:** restore the previous badge text and note verbatim, and add a stable cell `id`.
 - **Verification:** the site check passes for the page, and `nbformat.validate` gives no warning.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `a0e66a1` and `ca18653`, with the original cell id `9082801d`. The site check passes.
 
 #### E7-04 — Saved outputs not produced in order, nor in the documented environment
 - **Location:** whole notebook. Execution counts `1…12, 14, 13, 16`: cell 25 (count 14) ran after cell 26 (count 13), and count 15 is missing. `info()` output shows `pandas.core.frame.DataFrame` and `object` columns (pandas 2.x), while the course pins pandas 3.0.6.
@@ -98,28 +98,28 @@ accident.
 - **Consequence:** the saved outputs cannot be shown to correspond to an in-order run of the current code.
 - **Proposed correction:** re-execute the notebook from a clean kernel in the documented environment and keep the fresh outputs. Pearson r = 0.084 and every other number must stay the same.
 - **Verification:** saved-state check, fresh-vs-saved comparison of the text outputs, visual inspection of the figures.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `be26424`. Counts are 1–16. Every text output is unchanged except the pandas-3 `info()` header and dtypes; sources and metadata were verified unchanged.
 
 #### E7-05 — Unavailable font weight emits a warning in the documented environment
 - **Location:** cell 27, `fontweight="semibold"`.
 - **Severity / class / status:** low · graphical/reproducibility · verified defect.
 - **Evidence:** fresh execution writes `findfont: Failed to find font weight semibold for DejaVu Sans, now using 700.` to stderr. Saved into the notebook, that line would be published on the page.
 - **Proposed correction:** use `"bold"` (weight 700). Matplotlib already substitutes it, so the rendered figure is unchanged.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `a0e66a1`. The re-execution writes no stderr.
 
 #### E7-06 — Axis label contradicts the lesson's own definition of the variable
 - **Location:** cell 26 (`uJQuJfvrypyP`): title “Número de autores e comprimento do abstract”, x-label “Número de autores”.
 - **Severity / class / status:** low · pedagogical · verified defect.
 - **Evidence:** cells 9, 13 and 16 insist that `n_authors` counts *entries* in the authorship field (collective authorship included), not people. All other figures say “entradas de autoria”.
 - **Proposed correction:** “Entradas de autoria e comprimento do abstract” and “Entradas de autoria por artigo”.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `a0e66a1`. Figure inspected after re-execution.
 
 #### E7-07 — “As duas vistas abaixo” now contains three figures
 - **Location:** cell 24 (`publication-scale-comparison`) opens a `layout-ncol=2` block that now holds cells 25, 26 and 27.
 - **Severity / class / status:** low · pedagogical · requires authorial decision.
 - **Evidence:** the text announces a linear and a logarithmic view; cell 25 adds a second logarithmic view.
 - **Proposed correction:** none applied. Whether cell 25 should stay inside the comparison, move before it, or replace cell 21 is a decision for the author.
-- **Final status:** *pending*.
+- **Final status:** **deferred** (authorial decision).
 
 Scientific content: verified and retained. The sample-paper coordinates in
 cell 8 match the data (2001.04171 → (2, 108); 2001.04417 → (3, 170)). The
@@ -133,19 +133,19 @@ Pearson r = 0.084 and the inverse transformation.
 - **Severity / class / status:** high · publication/graphical · verified defect.
 - **Evidence:** in the rendered page, `fig-arxiv-spearman` and `fig-gapminder-spearman` have no ID, caption or alt text, and the Gapminder preparation code is not folded.
 - **Proposed correction:** same as E7-02. No re-execution is needed, because the Python code is unchanged.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `ca18653`. `fig-arxiv-spearman` and `fig-gapminder-spearman` render with caption and alt text, and the Gapminder code folds.
 
 #### E8-02 — Colab badge lost its Portuguese description and runtime note
 - **Location:** cell 0 (no `id`).
 - **Severity / class / status:** high · publication · verified defect. Same evidence and correction as E7-03; the site check fails on this page.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `ca18653`, with the original cell id `e1855811`.
 
 #### E8-03 — Order of tied rows is not reproducible
 - **Location:** cell 20 (`e7e6ac92`), `sort_values(by="n_authors", ascending=False)`.
 - **Severity / class / status:** low · reproducibility · verified, retained.
 - **Evidence:** the two articles with 33 entries (rows 1349 and 1655) appear in a different order in the fresh run. Their ranks (3383.5) and the explanation in cell 21 are unaffected.
 - **Proposed correction:** none. This is display order only; `kind="stable"` would remove the variation if the author wants it.
-- **Final status:** *pending*.
+- **Final status:** **verified and retained**.
 
 Scientific content: verified and retained. The quoted values were recalculated
 independently: the arXiv Spearman submatrix (0.050 / 0.111 / 0.154),
@@ -180,14 +180,14 @@ Saved outputs match a fresh run exactly, including the BCa interval
 - **Consequence:** the figure suggests a jagged, multimodal sampling distribution, which contradicts the text (“concentrado perto de 0,622”) and the binomial model introduced next.
 - **Proposed correction:** use one bin per possible count k, with edges at (k ± 0.5)/n, plus one explanatory comment. Statistical content, labels and captions are unchanged. In cell 63, also move the legend to the empty upper-left area, where it no longer covers the data, and use white bar edges, as in cell 38.
 - **Verification:** the revised figures were generated and inspected (prototype); all other outputs of the notebook stay byte-identical.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `65a6041`. Before/after figures inspected: the comb is gone, and the shape matches Binomial(397, p̂)/397. All other outputs are byte-identical.
 
 #### E10-02 — `bootstrap_result` is reused for the percentile call and the BCa call
 - **Location:** cell 55 (percentile) and cell 65 (BCa); cells 57, 59 and 63 read the first object.
 - **Severity / class / status:** low · computational · optional improvement (reasonable alternative).
 - **Evidence:** in order, every cell reads the intended object. If cell 63 is re-run after cell 65, it plots the BCa call's resamples. That is still a valid bootstrap distribution, and its limits are recomputed with `np.quantile`, so the figure stays correct but its draws change. The validator's assertions refer to the final (BCa) object.
 - **Proposed correction:** optional rename (`percentile_bootstrap_result`). Deferred to avoid churn in a correct lesson.
-- **Final status:** *pending*.
+- **Final status:** **deferred** (optional).
 
 Verified and retained: the Bernoulli/binomial derivations, SE = √(p(1−p)/n),
 the exact equivalence between the bootstrap of 0/1 data and Binomial(n, p̂)/n,
@@ -211,19 +211,19 @@ schemes are correct.
 - **Consequence:** the notebook cannot be validated offline (in CI or locally without a network), and the text misdescribes the code.
 - **Proposed correction:** implement the local-first reading that the text describes, with the same pinned URL as fallback. Apply the same pattern to the glossary.
 - **Verification:** fresh execution produces identical outputs.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `45c3043`. Fresh runs from the lesson directory and from the repository root reproduce every saved text output.
 
 #### E10b-02 — One saved execution count out of sequence
 - **Location:** cell 67 (`eac9f734`), count 67 between counts 32 and 34.
 - **Severity / class / status:** medium · reproducibility · verified defect (counter only).
 - **Evidence:** a fresh in-order run reproduces this cell's printed summary character for character, and every other output in the notebook.
 - **Proposed correction:** after the verified in-order run, record that run's execution counts. The outputs, which were verified identical, stay byte-for-byte unchanged.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `45c3043`. Only the one count changed (67 → 33); outputs are byte-identical.
 
 #### E10b-03 — Minor wording: “percentual” for “percentil”
 - **Location:** cell 76 (`f88aaaf7`, code comment) and cell 111 (`c835ee6b`, code comment).
 - **Severity / class / status:** low · pedagogical · verified defect. Deferred, because both are code comments and the fix would mean re-touching executed cells for a cosmetic gain.
-- **Final status:** *pending*.
+- **Final status:** **deferred**.
 
 ### Encontro 11 — `encontro_11/enc_11.ipynb` (not published)
 
@@ -242,20 +242,20 @@ correct (0.056 / 0.021 / 0.013).
 - **Severity / class / status:** blocker (publication) · reproducibility · verified defect.
 - **Evidence:** saved-state check. A fresh run in the course environment succeeds and reproduces every saved number, **except** cell 26 (`6bXHkAlkphSL`): 0.52 saved, 0.60 fresh, because of E11-02.
 - **Proposed correction:** execute from a clean kernel once E11-02 to E11-05 are settled. Deferred.
-- **Final status:** *pending*.
+- **Final status:** **unresolved** (publication blocker).
 
 #### E11-02 — Unseeded generator in a published demonstration
 - **Location:** cell 3 (`cdbd079f`), `coin_rng = np.random.default_rng()`.
 - **Severity / class / status:** medium · reproducibility · requires authorial decision.
 - **Evidence:** the saved outputs of cells 24–26 (“coroa”, 0.52) cannot be reproduced. The cell that appends flips one at a time is meant to be re-run interactively; a seed would not stop that.
 - **Proposed correction:** seed `coin_rng`, as the other generators in this cell already are. Deferred to the author.
-- **Final status:** *pending*.
+- **Final status:** **deferred** (authorial decision).
 
 #### E11-03 — Broken Colab link and non-standard badge
 - **Location:** cell 0 (no `id`) links to `encontro_11/enc_11_a.ipynb`, which does not exist. The alt text is English, there is no runtime note, and the badge precedes the YAML cell.
 - **Severity / class / status:** medium · publication · verified defect.
 - **Proposed correction:** point the link to `encontro_11/enc_11.ipynb`. Bringing the badge to the course convention is part of the publication work (deferred).
-- **Final status:** *pending*.
+- **Final status:** **partly fixed**: link corrected in `fa82080`; badge text and runtime note deferred to the publication work.
 
 #### E11-04 — Duplicated and out-of-order passages
 - **Location:**
@@ -269,33 +269,33 @@ correct (0.056 / 0.021 / 0.013).
   - the heading “Um experimento com uma moeda justa” (cell 21) is followed by text about the burden of proof, not about the coin.
 - **Severity / class / status:** medium · pedagogical · verified defect.
 - **Proposed correction:** consolidate. Which version of each duplicated passage to keep is an editorial choice, so this is deferred to the author.
-- **Final status:** *pending*.
+- **Final status:** **deferred** (editorial decision).
 
 #### E11-05 — Unit of randomisation and independence are not discussed
 - **Location:** cells 27–33 and 59.
 - **Severity / class / status:** medium · methodological · probable issue.
 - **Evidence:** the permutation test treats the 4,105 impressions as exchangeable, independent Bernoulli units. The notebook does not say whether Upworthy randomised impressions, page views or visitors. Repeated impressions to the same visitor would make outcomes dependent, and the p-value and interval would then be too optimistic. Cell 59 rightly makes causal comparison conditional on the randomisation having “funcionado como planejado”, but does not name the unit.
 - **Proposed correction:** add one sentence naming the assumed unit and the consequence if impressions are not independent. The exact randomisation unit should come from the archive's documentation (Matias et al., 2021), which was not consulted here. Not implemented, to avoid asserting an unverified fact.
-- **Final status:** *pending*.
+- **Final status:** **deferred** (needs the archive's documentation).
 
 #### E11-06 — The null-distribution histogram has empty bins between bars
 - **Location:** cell 39 (`9c5c8f2c`, `fig-upworthy-nula`), `bins="fd"`.
 - **Severity / class / status:** medium · graphical · verified defect.
 - **Evidence:** with the margins fixed, T* = k(1/2091 + 1/2014) − 50/2014. The lattice step is 0.0975 p.p., while the FD bin width is about 0.045 p.p. The saved figure shows an empty bin between every pair of bars.
 - **Proposed correction:** one bin per possible k, as in E10-01. Optionally shade both tails |T*| ≥ |T_obs| so the two-sided p-value is visible. Deferred, together with the other changes needed for publication.
-- **Final status:** *pending*.
+- **Final status:** **deferred** (with the publication work; same correction as E10-01).
 
 #### E11-07 — Missing visual comparisons
 - **Severity / class / status:** low · graphical · optional improvement.
 - **Evidence:** the only figure is the null distribution. The two CTRs with their uncertainty, and the bootstrap distribution behind the interval [−0.04, 1.31] p.p., are reported only as numbers. Both figures can be built from data already in the notebook (`creature_outcomes`, `monkey_outcomes`, `effect_bootstrap_result.bootstrap_distribution`); nothing would have to be invented.
-- **Final status:** *pending* (recommended for the publication PR).
+- **Final status:** **deferred** (recommended for the publication PR).
 
 #### E11-08 — Data read only from `refs/heads/main`, provenance undocumented
 - **Location:** cell 6 (`3593d4e7`); `DATASETS.md` has no entry for the CSV under `encontro_11/data/`.
 - **Severity / class / status:** medium · reproducibility/publication · verified defect.
 - **Evidence:** the file exists locally but is never read from disk. The URL tracks `main`, not a fixed commit.
 - **Proposed correction:** read the local file first, as the other lessons do (deferred, with the publication work). Add a `DATASETS.md` entry that records only verifiable facts and the gaps (implemented).
-- **Final status:** *pending*.
+- **Final status:** **partly fixed**: `DATASETS.md` entry added in `3b85fb6`; local-first reading deferred.
 
 ### Encontro 12 — `encontro_12/enc_12.ipynb` (not published)
 
@@ -310,45 +310,45 @@ p-values (0.00025).
 - **Severity / class / status:** high (publication) · reproducibility · verified defect.
 - **Evidence:** the saved tables contain a column `p-valor_holm` that the current code does not create. A fresh run produces only `p_valor_holm`.
 - **Proposed correction:** re-execute from a clean kernel in a documented environment. Deferred (see E12-02).
-- **Final status:** *pending*.
+- **Final status:** **deferred** (requires re-execution in an environment the author has yet to choose).
 
 #### E12-02 — Dependencies outside the documented environment
 - **Location:** cells 3 (`!pip install -q pyarrow`), 33 (`!python -m spacy download …`), 34, 62 and 68.
 - **Severity / class / status:** blocker (publication) · reproducibility · verified defect.
 - **Evidence:** in the course environment, execution fails at `pd.read_parquet` (no pyarrow), `import spacy`, `statsmodels` and `sklearn` (30 cells fail). The `pt_core_news_sm` version is not pinned, and the data are downloaded from Hugging Face on every run.
 - **Proposed correction:** the author must decide whether to extend `scripts/requirements.txt` (and with which spaCy model version) or keep encontro 12 Colab-only. Deferred.
-- **Final status:** *pending*.
+- **Final status:** **unresolved** (publication blocker; authorial decision).
 
 #### E12-03 — Article-level mean versus pooled sentence-level mean
 - **Location:** cells 41, 43, 44 and 47–54.
 - **Severity / class / status:** medium · interpretative · probable issue (no error in the computation).
 - **Evidence:** “comprimento médio das sentenças” is computed per article (tokens ÷ sentences) and then averaged with equal weight per article. This answers “how long are sentences in a *typical article* of the section?”. A pooled mean (all tokens ÷ all sentences in the section) answers “how long is a *typical sentence*?”. Cell 43 already states the distinction, and the permutation test treats articles as the exchangeable units, which is consistent with the article-level estimand. Pooling sentences and permuting them would violate independence within articles. Values computed with the reproduced annotations are given in §5.
 - **Proposed correction:** none to the estimand, which matches the question as stated (“características linguísticas de suas matérias”). Optionally, make the wording in cells 43 and 47 say “média, por matéria, do comprimento médio das sentenças”. Left to the author.
-- **Final status:** *pending*.
+- **Final status:** **verified and retained**. The computation is correct and matches the stated question; the optional wording change is deferred. Magnitudes are in §5.
 
 #### E12-04 — PCA presented as clustering
 - **Location:** cell 67 (`revision-pca-method`), heading “## 6. Visualização com Clusters (PCA)”.
 - **Severity / class / status:** medium · interpretative/pedagogical · verified defect.
 - **Evidence:** PCA is a linear projection, not a clustering algorithm; the cell's own text describes it correctly as a projection.
 - **Proposed correction:** change the heading to “## 6. Visualização com componentes principais (PCA)”.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `4829990`.
 
 #### E12-05 — Interpretive axis labels not checked against the loadings
 - **Location:** cell 68 (`1jl7DvCqgxfy`); cell 69 (`revision-pca-interpretation`) says the labels “precisam ser conferidas”.
 - **Severity / class / status:** medium · interpretative · requires investigation. Loadings are given in §5.
 - **Evidence:** the figure has no tick values and prints neither `pca.components_` nor `explained_variance_ratio_`, yet labels both axes with directional claims (“← mais verbos | …”).
 - **Proposed correction:** print the loadings and the explained variance next to the figure, and align the labels with them. Deferred; it requires re-execution in the NLP environment.
-- **Final status:** *pending*.
+- **Final status:** **verified** (the labels match the reproduced loadings, §5); printing the loadings is **deferred**.
 
 #### E12-06 — The legend contradicts the marker
 - **Location:** cell 68. The legend says “Ponto branco: centro da seção”, but the marker is `color="darkgrey"`. Cell 69 asks readers to read “ponto branco” as the grey marker.
 - **Severity / class / status:** low · graphical · verified defect (confirmed on the saved image).
 - **Proposed correction:** draw the marker white with a dark edge, or change the legend text, then remove the sentence in cell 69. Deferred (requires re-execution).
-- **Final status:** *pending*.
+- **Final status:** **deferred** (requires re-execution).
 
 #### E12-07 — Not ready for the website
 - **Evidence:** no YAML/`pagetitle` cell, English badge text, no runtime note, and no `CHECKS` entry in `check_course.py`.
-- **Final status:** *pending* (publication blocker, see §6).
+- **Final status:** **deferred** (publication blocker, see §6).
 
 The final project (`encontro_12/final_project/enc_12_final_project.ipynb`) is
 an unexecuted exercise template. It needs NLTK, spaCy and `en_core_web_sm`.
@@ -363,12 +363,19 @@ All four answer keys execute; their outputs match apart from Python's
 - **Location:** `encontro_9/homework/enc_9_homework.ipynb`, cell 15 (`0a980391`): “Com base nas ECDFs e KDEs”. The tasks ask for an ECDF (cell 11) and histograms (cell 13). Cell 2 (`999168b1`) also has the typo “carregar o as amostras”.
 - **Severity / class / status:** low · pedagogical · verified defect.
 - **Proposed correction:** “Com base nas ECDFs e nos histogramas”; “carregar as amostras”.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `7bb5975`.
 
 #### HW-02 — The conclusion cites an analysis the homework does not contain
 - **Location:** `encontro_8/homework/enc_8_homework.ipynb`, cell 11 (`8bfcfbaf`) asks students to consider “o resultado da análise de sensibilidade”, but no exercise performs one.
 - **Severity / class / status:** low · pedagogical · requires authorial decision (add the exercise or remove the bullet).
-- **Final status:** *pending*.
+- **Final status:** **deferred** (authorial decision).
+
+#### HW-03 — Running the encontro 3 answer key writes a file into the repository
+- **Location:** `encontro_3/homework/enc_3_respostas_hw.ipynb` downloads the chosen book into its working directory.
+- **Severity / class / status:** low · reproducibility · verified (observed during this audit).
+- **Evidence:** the fresh run created an untracked `encontro_3/homework/leonardo_da_vinci.txt`, byte-identical to `encontro_3/data/leonardo_da_vinci.txt`. The file was removed, and nothing was committed.
+- **Proposed correction:** read the local copy in `encontro_3/data/` when it exists, as the lessons do. Not implemented: answer keys are outside the published site, and the behaviour is harmless in Colab.
+- **Final status:** **deferred**.
 
 ## 4. Repository-wide findings
 
@@ -377,31 +384,31 @@ All four answer keys execute; their outputs match apart from Python's
 - **Severity / class / status:** medium · reproducibility · verified.
 - **Evidence:** the workflow runs only `quarto render`. With `execute.enabled: false`, the site depends entirely on the saved outputs, but `check_course.py` (saved state and site) never runs in CI.
 - **Proposed correction:** add a job that runs `scripts/check_course.py --site` after the render (it needs PyYAML, nbformat, nbclient and beautifulsoup4). Not implemented: it changes deployment behaviour and should be the author's decision. Recommended as a separate PR.
-- **Final status:** *pending*.
+- **Final status:** **deferred** (recommended separate PR).
 
 #### R-02 — Validator assertion refers to a variable removed from encontro 8
 - **Location:** `scripts/check_course.py`, `CHECKS["encontro_8/enc_8.ipynb"]`, `assert len(gapminder_2007) == 142`.
 - **Severity / class / status:** high · computational · verified defect.
 - **Evidence:** `gapminder_2007` is defined only in `enc_8-parte2.ipynb` (and asserted there too). In `enc_8.ipynb`, `--execute` would raise `NameError`.
 - **Proposed correction:** replace the assertion with checks of what encontro 8 actually computes: 1,704 rows and the symmetric Gapminder Spearman matrix with unit diagonal.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `b6f99c3`. `--execute` passes for encontro 8.
 
 #### R-03 — The validator cannot catch the class of defect that broke the build
 - **Evidence:** E7-01 and E7-02/E8-01 were introduced by an edit made in Colab and passed through unnoticed.
 - **Proposed correction:** two source-level checks in `check_notebook()`: (a) `#|` options preceded by blank lines; (b) duplicate `#| label` values within a notebook. Both are small and deterministic.
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `b6f99c3`. Both checks fail on `main`'s enc_7/enc_8 and pass on the corrected notebooks.
 
 #### R-04 — Optional pyarrow changes saved outputs
 - **Severity / class / status:** low · reproducibility · verified.
 - **Evidence:** pandas `memory usage` in saved `info()` outputs (439.1 KB in enc_10-parte2; 15.2 MB in enc_11) differs from the documented environment (363.0 KB; 2.6 MB). The saved outputs were produced with pyarrow installed, which `requirements.txt` does not pin.
 - **Proposed correction:** none (cosmetic). Note it for the author.
-- **Final status:** *pending*.
+- **Final status:** **verified and retained**.
 
 #### R-05 — `DATASETS.md` does not cover encontros 11–12
 - **Severity / class / status:** medium · publication · verified.
 - **Evidence:** no entry for the Upworthy CSV in the repository, nor for the remote Folha de S.Paulo dataset.
 - **Proposed correction:** add short entries with verifiable facts (file, size, columns, cited source) and explicit gaps (acquisition URL, date, licence).
-- **Final status:** *pending*.
+- **Final status:** **fixed** in `3b85fb6`.
 
 Website configuration, homepage, sidebar and README: verified and retained.
 They consistently list encontros 1–10 (part 2). Branding, attribution, licence
@@ -476,3 +483,46 @@ Adding the two notebooks to `_quarto.yml` is **not** sufficient and was not done
 | Validator `CHECKS` entry | Missing | Missing |
 | `DATASETS.md` | R-05 | R-05 |
 | Sidebar, homepage, README entries | Missing | Missing |
+
+## 7. Verification after the corrections
+
+Run on the final commit of this branch, in the documented `.venv`:
+
+| Command | Result |
+|---|---|
+| `python scripts/check_course.py` | PASS: 13 notebooks, 333 code cells. On `main` it stopped at encontro 7. |
+| `python scripts/check_course.py --execute` | PASS: 13 notebooks executed in fresh kernels, with every independent assertion; no stderr. |
+| `quarto render` | exit 0, no errors or warnings. On `main` it aborted. |
+| `python scripts/check_course.py --site` | PASS: 16 pages, 68 captioned plots, 5,492 local links and resources. |
+| `git diff --check main...HEAD` | clean |
+
+Additional checks:
+
+- In the rendered HTML of encontros 7, 8 and 10, no `#|` line appears as code; every `fig-*` block has an image with alt text and a caption; the Portuguese badge and the runtime note are present.
+- Notebook JSON was rewritten in each file's original serialisation (enc_10 by targeted text replacement). Source and metadata diffs are limited to the lines listed in the commits.
+
+What was **not** done:
+
+- Encontros 11 and 12 and the final project were not re-executed into the repository. Encontro 12 was executed only in a temporary environment outside the documented one, to verify its numbers.
+- The CI workflow was not changed (R-01).
+- The answer keys of encontros 5–9 do not exist; the homework notebooks are templates without saved outputs and were read, not executed.
+
+### Effect on published numerical conclusions
+
+**None.** No published number changed:
+
+- encontro 7's re-execution reproduced every value (for example Pearson r = 0.084);
+- encontro 10's corrected figures display the same simulated and bootstrap values, binned correctly;
+- encontro 10, part 2 keeps byte-identical outputs.
+
+The only visible changes on the site are:
+
+- the encontro 10 histograms (no artificial comb);
+- encontro 7's relabelled axis and title;
+- the captions, alt text, code folds and badge text that had been lost in encontros 7 and 8.
+
+### Before/after figures
+
+The previous and revised encontro 10 figures (cells 38 and 63) are the
+embedded PNGs in `main` and in this branch. GitHub's rich notebook diff shows
+them side by side. No comparison images were added to the repository.
