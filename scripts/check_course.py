@@ -72,8 +72,13 @@ assert (author_counts > 0).all()
     "encontro_8/enc_8.ipynb": """
 assert np.isclose(pearson_between_ranks.statistic, authors_abstract_spearman.statistic)
 assert len(without_max_authors) == len(arxiv_df) - 1
-assert len(gapminder_2007) == 142
 assert np.allclose(np.diag(arxiv_spearman_matrix), 1)
+assert len(gapminder_df) == 1704
+assert np.allclose(gapminder_spearman_matrix, gapminder_spearman_matrix.T)
+assert np.isclose(
+    gapminder_spearman_matrix.loc['gdpPercap', 'lifeExp'],
+    gapminder_df['gdpPercap'].rank().corr(gapminder_df['lifeExp'].rank()),
+)
 """,
     "encontro_8/enc_8-parte2.ipynb": """
 import numpy as np
@@ -157,10 +162,31 @@ def check_execution_state(notebook: nbformat.NotebookNode, path: Path) -> int:
     return len(cells)
 
 
+def check_cell_options(notebook: nbformat.NotebookNode, path: Path) -> None:
+    """Reject Quarto options Quarto would ignore and labels it would reject."""
+    labels = set()
+    for index, cell in enumerate(notebook.cells):
+        if cell.cell_type != "code":
+            continue
+        lines = cell.source.splitlines()
+        first = next((n for n, line in enumerate(lines) if line.strip()), None)
+        if first and lines[first].startswith("#|"):
+            raise ValueError(f"{path}: cell {index}: blank lines before '#|' options")
+        for line in lines:
+            if not line.startswith("#|"):
+                break
+            key, _, value = line[2:].partition(":")
+            if key.strip() == "label":
+                if value.strip() in labels:
+                    raise ValueError(f"{path}: cell {index}: duplicate label {value.strip()}")
+                labels.add(value.strip())
+
+
 def check_notebook(path: Path, execute: bool) -> int:
     """Check format/state and optionally execute in a fresh local kernel."""
     notebook = nbformat.read(path, as_version=4)
     nbformat.validate(notebook)
+    check_cell_options(notebook, path)
     code_count = check_execution_state(notebook, path)
     if execute:
         relative = path.relative_to(ROOT).as_posix()
