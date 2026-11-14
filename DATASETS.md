@@ -71,6 +71,18 @@ O [manual do pacote `languageR`](https://cran.r-project.org/web/packages/languag
 
 O histórico de aquisição e exportação da cópia local e seus termos específicos de redistribuição não estão registrados. A documentação do conjunto de referência não reconstitui esse histórico.
 
+## Testes de manchetes do Upworthy — `encontro_11/data/`
+
+O arquivo `upworthy-archive-exploratory-packages-03.12.2020.csv` tem 22.666 linhas e 17 colunas, entre elas `clickability_test_id`, `eyecatcher_id`, `headline`, `impressions` e `clicks`. Cada linha é uma versão (pacote) exibida em um teste A/B; há 4.873 identificadores de teste distintos, com `created_at` entre janeiro de 2013 e abril de 2015. A primeira coluna, `Unnamed: 0`, é um índice herdado de uma exportação anterior. O arquivo é usado no Encontro 11, ainda não publicado no site.
+
+O notebook atribui os dados ao *Upworthy Research Archive* (Matias et al., 2021) e identifica o arquivo como o subconjunto exploratório do projeto, como indica o nome. A URL e a data de aquisição desta cópia e seus termos de redistribuição não estão registrados. O arquivo não informa se uma impressão corresponde a um visitante distinto; essa informação é relevante para tratar impressões como observações independentes.
+
+## Notícias da Folha de S.Paulo — conjunto remoto
+
+O Encontro 12, ainda não publicado no site, lê diretamente do Hugging Face a conversão em Parquet do conjunto [`emdemor/news-of-the-brazilian-newspaper`](https://huggingface.co/datasets/emdemor/news-of-the-brazilian-newspaper). A leitura da conversão automática (`refs/convert/parquet`) retornou 167.053 registros e seis colunas. Não há cópia no repositório. Conforme o notebook, a página do conjunto atribui a coleta original a Marlesson Santana e remete ao projeto de coleta e a uma versão no Kaggle.
+
+A versão lida não é fixada por um identificador de revisão, e os termos de uso dos textos não estão registrados no repositório.
+
 ## Textos e registros incorporados às aulas
 
 O trecho sobre Robert K. Merton e a passagem sobre hipótese científica são atribuídos às respectivas páginas da Wikipédia no primeiro uso. O repositório não registra a revisão nem a data de consulta dessas páginas.
