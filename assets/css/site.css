@@ -429,13 +429,6 @@ footer.footer .nav-footer > div {
   padding-block: 0.25rem;
 }
 
-.quarto-dark .course-footer-logos {
-  /* The positive marks include black lettering that needs a light backing. */
-  padding-inline: 0.45rem;
-  background: #fff;
-  border-radius: 0.2rem;
-}
-
 .course-footer-logos img {
   display: block;
   max-width: 100%;
@@ -444,6 +437,11 @@ footer.footer .nav-footer > div {
 
 .course-logo-fale {
   width: 138px;
+}
+
+.quarto-dark .course-logo-fale {
+  /* White application specified by the UFMG visual identity manual. */
+  filter: brightness(0) invert(1);
 }
 
 .course-logo-fapemig {

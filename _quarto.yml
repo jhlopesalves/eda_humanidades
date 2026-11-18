@@ -33,9 +33,10 @@ website:
   back-to-top-navigation: true
   open-graph: true
   page-footer:
-    # Official positive marks, kept unaltered from these identity resources:
+    # Institutional marks and their dark equivalents:
     # https://www.letras.ufmg.br/site/pt-BR/institucional/marca
-    # https://fapemig.br/difusao-do-conhecimento/imprensa/manual-da-marca
+    # https://www.ufmg.br/marca/ (white application)
+    # https://api.site.fapemig.br/wp-content/uploads/manual_identidade_visual.pdf (p. 6)
     # Footer regions accept Markdown; raw blocks preserve the HTML indentation.
     left: |
       ```{=html}
@@ -54,9 +55,16 @@ website:
           >
           <img
             src="/assets/logos/fapemig.png"
-            class="course-logo-fapemig"
+            class="course-logo-fapemig light-content"
             width="1324"
             height="1035"
+            alt=""
+          >
+          <img
+            src="/assets/logos/fapemig-negativo.svg"
+            class="course-logo-fapemig dark-content"
+            width="166"
+            height="130"
             alt=""
           >
         </div>
