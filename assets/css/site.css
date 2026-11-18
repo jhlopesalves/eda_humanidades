@@ -236,9 +236,7 @@ figure.quarto-float-fig img {
 
 .course-hero h1.title {
   margin: 0 0 1.1rem;
-  font-size: clamp(2.4rem, 4.55vw, 4.35rem);
-  line-height: 1.05;
-  text-wrap: wrap;
+  font-size: clamp(1.85rem, 3.1vw, 2.75rem);
 }
 
 .course-hero .course-lead {
@@ -288,7 +286,7 @@ figure.quarto-float-fig img {
 
 .course-hero-figure {
   justify-self: end;
-  width: min(100%, 31rem);
+  width: min(100%, 29rem);
   margin: 0;
 }
 
@@ -316,7 +314,7 @@ figure.quarto-float-fig img {
   margin: 0 0 0.4rem;
   padding: 0;
   border: 0;
-  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  font-size: clamp(1.55rem, 2.25vw, 2.05rem);
 }
 
 .course-section-intro p {
@@ -331,9 +329,8 @@ figure.quarto-float-fig img {
 }
 
 .course-module h3 {
-  border-top: 2px solid var(--bs-link-color);
   margin: 0;
-  padding: 0.85rem 0;
+  padding: 0 0 0.7rem;
   font-size: 1.04rem;
 }
 
@@ -388,12 +385,19 @@ figure.quarto-float-fig img {
 
 footer.footer .nav-footer {
   display: grid;
-  grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr) minmax(0, 0.85fr);
-  gap: 1.25rem 2rem;
-  padding: 1.6rem max(1.25rem, calc((100% - var(--course-width)) / 2));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.1rem 2rem;
+  padding-block: 1.25rem;
+  padding-inline: max(clamp(1.2rem, 4.5vw, 3.5rem), calc((100% - var(--course-width)) / 2));
   border-top: 1px solid var(--bs-border-color);
   background: var(--bs-secondary-bg);
   color: var(--bs-body-color);
+}
+
+/* Quarto emits a centre placeholder even with only left and right content. */
+footer.footer .nav-footer > .nav-footer-center {
+  display: none;
 }
 
 footer.footer .nav-footer > div {
@@ -410,16 +414,26 @@ footer.footer .nav-footer > div {
   color: var(--bs-link-color);
 }
 
+.course-footer-institutions p {
+  margin: 0;
+}
+
 .course-footer-logos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: fit-content;
   max-width: 100%;
-  gap: 0.5rem 1.2rem;
-  padding: 0.45rem 0.7rem;
-  /* The official positive marks need a light backing in both themes. */
+  gap: 0.5rem 0.9rem;
+  margin-top: 0.55rem;
+  padding-block: 0.25rem;
+}
+
+.quarto-dark .course-footer-logos {
+  /* The positive marks include black lettering that needs a light backing. */
+  padding-inline: 0.45rem;
   background: #fff;
+  border-radius: 0.2rem;
 }
 
 .course-footer-logos img {
@@ -429,11 +443,11 @@ footer.footer .nav-footer > div {
 }
 
 .course-logo-fale {
-  width: 160px;
+  width: 138px;
 }
 
 .course-logo-fapemig {
-  width: 84px;
+  width: 68px;
 }
 
 .course-footer-support {
@@ -445,8 +459,19 @@ footer.footer .nav-footer > div {
   margin-bottom: 0.35rem;
 }
 
-.course-footer-reuse a {
-  display: inline-block;
+.course-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-footer-links a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
   min-height: 1.5rem;
 }
 
@@ -471,12 +496,6 @@ footer.footer .nav-footer > div {
   border: 1px solid var(--bs-border-color);
   border-radius: 0.2rem;
   box-shadow: none;
-}
-
-.course-footer-repository {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.5rem;
 }
 
 @media (max-width: 991.98px) {

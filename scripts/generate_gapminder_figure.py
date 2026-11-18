@@ -57,7 +57,7 @@ def plot_gapminder(data: pd.DataFrame, theme: str) -> Figure:
     areas = 23 + (1313 - 23) * fraction
 
     width, height = 432, 340
-    left, right, top, bottom = 36, 421, 86, 236
+    left, right, top, bottom = 36, 421, 81, 236
     fig = Figure(figsize=(width / 72, height / 72))
     ax = fig.add_axes(
         (
@@ -86,7 +86,7 @@ def plot_gapminder(data: pd.DataFrame, theme: str) -> Figure:
     )
     ax.set_yticks([40, 50, 60, 70, 80])
     ax.xaxis.set_minor_locator(NullLocator())
-    ax.tick_params(length=0, pad=7, labelsize=15, labelcolor=style["muted"])
+    ax.tick_params(length=0, pad=7, labelsize=14.5, labelcolor=style["muted"])
     ax.set_axisbelow(True)
     ax.grid(axis="y", color=style["grid"], linewidth=0.75)
     ax.spines[["top", "left", "right"]].set_visible(False)
@@ -95,14 +95,14 @@ def plot_gapminder(data: pd.DataFrame, theme: str) -> Figure:
 
     # Um sistema de coordenadas em pontos mantém o alinhamento com as margens
     # do eixo quando o SVG inteiro é reduzido na página.
-    def label(x, y, text, size=15, *, color=style["text"], **kwargs):
+    def label(x, y, text, size=14, *, color=style["text"], **kwargs):
         return fig.text(x / width, 1 - y / height, text, fontsize=size, color=color, **kwargs)
 
-    label(3, 31, "Renda e longevidade", 34, family="STIXGeneral")
-    label(4, 54, f"{len(data)} países · {YEAR}", 15, color=style["muted"])
-    label(427, 54, f"Spearman  ρ = {rho:.3f}".replace(".", ","), ha="right")
+    label(3, 28, "Renda e longevidade", 27, family="STIXGeneral")
+    label(4, 49, f"{len(data)} países · {YEAR}", color=style["muted"])
+    label(427, 49, f"Spearman  ρ = {rho:.3f}".replace(".", ","), 13, ha="right")
     label(4, top - 10, "Expectativa de vida (anos)")
-    label(right, bottom + 44, "PIB per capita · escala logarítmica", ha="right")
+    label(right, bottom + 40, "PIB per capita · escala logarítmica", ha="right")
 
     # Usa as mesmas cores de face e de contorno das marcas na área de dados.
     handles = [
@@ -122,19 +122,19 @@ def plot_gapminder(data: pd.DataFrame, theme: str) -> Figure:
     fig.legend(
         handles=handles,
         loc="center left",
-        bbox_to_anchor=(4 / width, 1 - (bottom + 64) / height, 414 / width, 0),
+        bbox_to_anchor=(4 / width, 1 - (bottom + 61) / height, 414 / width, 0),
         mode="expand",
         ncols=len(CONTINENTS),
         borderaxespad=0,
         borderpad=0,
         handlelength=0.8,
         handletextpad=0.4,
-        fontsize=15,
+        fontsize=14,
         labelcolor=style["text"],
         frameon=False,
     )
-    label(4, height - 11, "Área dos círculos: população", 14, color=style["muted"])
-    label(427, height - 11, "Fonte: Gapminder", 13, color=style["muted"], ha="right")
+    label(4, height - 15, "Área dos círculos: população", 13, color=style["muted"])
+    label(427, height - 15, "Fonte: Gapminder", 13, color=style["muted"], ha="right")
     return fig
 
 

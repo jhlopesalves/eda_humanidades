@@ -62,26 +62,19 @@ website:
         </div>
       </div>
       ```
-    center: |
-      ```{=html}
-      <a
-        class="course-footer-repository"
-        href="https://github.com/jhlopesalves/eda_humanidades"
-      >
-        <i class="bi bi-github" aria-hidden="true"></i>
-        <span>Repositório do curso</span>
-      </a>
-      ```
     right: |
       ```{=html}
       <div class="course-footer-reuse">
         <p class="course-footer-label">Uso e reutilização</p>
-        <p>
-          <a href="/DATASETS.md">Dados e proveniência</a><br>
-          <a href="https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE">
+        <ul class="course-footer-links" role="list">
+          <li><a href="https://github.com/jhlopesalves/eda_humanidades">
+            <i class="bi bi-github" aria-hidden="true"></i>Repositório do curso
+          </a></li>
+          <li><a href="/DATASETS.md">Dados e proveniência</a></li>
+          <li><a href="https://github.com/jhlopesalves/eda_humanidades/blob/main/LICENSE">
             Licença MIT
-          </a>
-        </p>
+          </a></li>
+        </ul>
       </div>
       ```
   navbar:
