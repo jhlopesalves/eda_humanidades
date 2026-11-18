@@ -40,6 +40,8 @@ Cada encontro pode ser lido diretamente no site e também aberto no Google Colab
 9. [Distribuição normal](encontro_9/enc_9.ipynb)
 10. [Amostragem e incerteza](encontro_10/enc_10.ipynb)
     - [Parte 2: bootstrap, erro padrão e intervalos de confiança](encontro_10/enc_10-parte2.ipynb)
+11. [Testes de hipóteses e comparação de proporções](encontro_11/enc_11.ipynb)
+12. [Análise linguística de um corpus jornalístico](encontro_12/enc_12.ipynb)
 
 ## Como usar os materiais
 
@@ -48,6 +50,17 @@ Para acompanhar o curso, use preferencialmente o **[site](https://jhlopesalves.g
 Para executar ou modificar os exemplos, use o link **Abrir no Google Colab** disponível no início de cada encontro.
 
 Este repositório reúne os notebooks-fonte, atividades, gabaritos e conjuntos de dados utilizados no curso.
+
+### Regenerar a figura da página inicial
+
+Os dois SVGs do Gapminder são gerados a partir da cópia do CSV usada no
+Encontro 8. Para atualizá-los, execute na raiz do repositório:
+
+```sh
+uv run --with-requirements scripts/requirements.txt python scripts/generate_gapminder_figure.py
+```
+
+O Quarto usa os SVGs já gerados em `assets/figures/`.
 
 ## Equipe e projeto
 

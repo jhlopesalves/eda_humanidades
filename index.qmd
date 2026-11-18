@@ -1,21 +1,61 @@
 ---
-title: "Estatística Descritiva e Inferencial em Python para Humanidades"
+pagetitle: "Estatística Descritiva e Inferencial em Python para Humanidades"
 sidebar: false
+page-layout: full
+body-classes: course-landing
 toc: false
 page-navigation: false
 ---
 
-Programação, análise de dados e estatística em Python para estudantes e pesquisadores das humanidades. Os exemplos incluem textos, metadados bibliográficos e indicadores socioeconômicos.
+::: {.course-home}
 
-**[Começar pelo Encontro 1](encontro_1/enc_1.ipynb)**
+::: {.course-hero}
 
-**Instrutor:** [Jhonatan Lopes](about.qmd#instrutor).
+::: {.course-hero-copy}
 
-As aulas combinam fundamentos de Python e raciocínio estatístico: como calcular uma medida, o que ela representa e quando uma comparação é justificável. O primeiro módulo apresenta programação e estatística descritiva; o segundo aborda associação entre variáveis, distribuições de probabilidade, amostragem e incerteza.
+```{=html}
+<header id="title-block-header" class="quarto-title-block">
+<h1 class="title" id="estatística-descritiva-e-inferencial-em-python-para-humanidades">Estatística Descritiva e Inferencial em Python para Humanidades</h1>
+</header>
+```
 
-## Encontros
+[Programação, análise de dados e estatística em Python para estudantes e pesquisadores das humanidades. Os exemplos incluem textos, metadados bibliográficos e indicadores socioeconômicos.]{.course-lead}
 
-### Módulo 1 — Python e estatística descritiva {.course-map-module}
+::: {.course-actions}
+[Começar pelo Encontro 1](encontro_1/enc_1.ipynb){.course-primary}
+
+[Sobre o curso](about.qmd)
+:::
+
+::: {.course-byline}
+[Jhonatan Lopes](about.qmd#instrutor) · Faculdade de Letras, UFMG
+:::
+
+:::
+
+```{=html}
+<figure class="course-hero-figure gapminder-figure">
+<img src="assets/figures/gapminder-2007-claro.svg"
+     class="light-content" width="432" height="340"
+     alt="Dispersão de 142 países em 2007. A expectativa de vida tende a aumentar com o PIB per capita, que está em escala logarítmica. As cores indicam os continentes e a área dos círculos representa a população.">
+<img src="assets/figures/gapminder-2007-escuro.svg"
+     class="dark-content" width="432" height="340"
+     alt="Dispersão de 142 países em 2007. A expectativa de vida tende a aumentar com o PIB per capita, que está em escala logarítmica. As cores indicam os continentes e a área dos círculos representa a população.">
+<figcaption><a href="encontro_8/enc_8-parte2.ipynb#visualizacao-editorial">Ver a análise no Encontro 8, parte 2</a></figcaption>
+</figure>
+```
+
+:::
+
+::: {.course-section-intro}
+## Percurso do curso {#encontros}
+
+As aulas combinam fundamentos de Python e raciocínio estatístico: como calcular uma medida, o que ela representa e quando uma comparação é justificável.
+:::
+
+::: {.course-modules}
+::: {.course-module}
+### Módulo 1 — Python e estatística descritiva
 
 ```{=html}
 <ul class="course-map" role="list" aria-label="Módulo 1">
@@ -70,7 +110,10 @@ As aulas combinam fundamentos de Python e raciocínio estatístico: como calcula
 </ul>
 ```
 
-### Módulo 2 — Associação, probabilidade e inferência {.course-map-module}
+:::
+
+::: {.course-module}
+### Módulo 2 — Associação, probabilidade e inferência
 
 ```{=html}
 <ul class="course-map" role="list" aria-label="Módulo 2">
@@ -114,5 +157,23 @@ As aulas combinam fundamentos de Python e raciocínio estatístico: como calcula
       <p>Reamostragem por participantes e palavras com dados de decisão lexical.</p>
     </div>
   </li>
+  <li class="course-map-row">
+    <span class="course-map-number">11</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_11/enc_11.ipynb">Testes de hipóteses</a>
+      <p>Testes de permutação e comparação de proporções.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">12</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_12/enc_12.ipynb">Análise linguística de um corpus jornalístico</a>
+      <p>Dispersão lexical, anotação linguística e componentes principais.</p>
+    </div>
+  </li>
 </ul>
 ```
+
+:::
+:::
+:::
