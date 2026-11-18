@@ -1,5 +1,5 @@
 body.quarto-light {
-  --course-link: #1a5f91;
+  --course-link: #2457c5;
   --course-muted: #586169;
   --course-border: #d6dde2;
   --course-table-header: #f1f4f6;
@@ -67,7 +67,7 @@ summary:focus-visible,
 /* Quarto's search forms remain white in both colour schemes. */
 .aa-Autocomplete .aa-Form .aa-InputWrapper .aa-Input:focus-visible,
 .aa-DetachedFormContainer .aa-Form .aa-InputWrapper .aa-Input:focus-visible {
-  outline-color: #1a5f91;
+  outline-color: #2457c5;
   outline-offset: 1px;
 }
 
@@ -241,7 +241,7 @@ footer.footer .nav-footer {
   padding: 1.25rem 1.5rem;
   border-top: 1px solid var(--course-border);
   /* The unaltered positive institutional marks need a light surface. */
-  background: #f5f6f7;
+  background: #fafbfc;
   color: #29343d;
   text-align: left;
 }
@@ -294,11 +294,11 @@ footer.footer .nav-footer > div {
 }
 
 .nav-footer a {
-  color: #1a5f91;
+  color: #2457c5;
 }
 
 .nav-footer a:focus-visible {
-  outline-color: #1a5f91;
+  outline-color: #2457c5;
 }
 
 @media (max-width: 991.98px) {
@@ -346,14 +346,56 @@ footer.footer .nav-footer > div {
 
 /* Editorial identity: shared navigation and a dedicated landing-page layout. */
 body.quarto-light {
-  --course-accent: #12665f;
-  --course-surface: #f3f7f5;
-  --course-link: #175f68;
+  --bs-body-bg: #ffffff;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-color: #202124;
+  --bs-body-color-rgb: 32, 33, 36;
+  --course-accent: #2457c5;
+  --course-surface: #fafbfc;
+  --course-link: #2457c5;
+  --course-muted: #606773;
+  --course-border: #dce1e8;
+  --course-on-accent: #ffffff;
 }
 body.quarto-dark {
-  --course-accent: #86d5c8;
-  --course-surface: #23312f;
-  --course-link: #9ad9df;
+  --bs-body-bg: #181a1f;
+  --bs-body-bg-rgb: 24, 26, 31;
+  --bs-body-color: #e7e9ed;
+  --bs-body-color-rgb: 231, 233, 237;
+  --course-accent: #91b3ff;
+  --course-surface: #20232a;
+  --course-link: #91b3ff;
+  --course-muted: #b2bac7;
+  --course-border: #363d49;
+  --course-on-accent: #141820;
+}
+body:is(.quarto-light, .quarto-dark) {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+body.quarto-dark #quarto-sidebar {
+  background-color: var(--bs-body-bg);
+}
+body.quarto-light #quarto-sidebar {
+  background-color: var(--bs-body-bg);
+}
+body.quarto-dark footer.footer .nav-footer {
+  background: var(--course-surface);
+  color: var(--bs-body-color);
+}
+body.quarto-dark .course-footer-support {
+  color: var(--course-muted);
+}
+body.quarto-dark .nav-footer a {
+  color: var(--course-link);
+}
+body.quarto-dark .course-footer-logos {
+  background: #ffffff;
+  padding: .65rem .8rem;
+  border-radius: .25rem;
+  width: fit-content;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 #quarto-header .navbar {
   background: var(--bs-body-bg);
@@ -419,7 +461,7 @@ main:has(.course-home) > header.quarto-title-block {
 main .course-primary {
   display: inline-block;
   background: var(--course-accent);
-  color: var(--bs-body-bg);
+  color: var(--course-on-accent);
   padding: .65rem 1rem;
   font-weight: 600;
   font-size: .92rem;
