@@ -1,0 +1,23 @@
+/*-- scss:defaults --*/
+$body-bg: #181a1f;
+$body-color: #e7e9ed;
+$body-secondary-bg: #20232a;
+$body-secondary-color: #b2bac7;
+$text-muted: $body-secondary-color;
+$border-color: #363d49;
+$primary: #91b3ff;
+$link-color: $primary;
+$component-active-color: $body-bg;
+$navbar-bg: $body-bg;
+$navbar-fg: $body-color;
+$navbar-hl: $link-color;
+$sidebar-bg: $body-bg;
+$sidebar-fg: $body-secondary-color;
+$toc-inactive-border: $border-color;
+$footer-bg: $body-secondary-bg;
+$footer-fg: $body-color;
+$code-bg: #2a303b;
+$code-color: #dce6ff;
+$code-block-bg: $body-secondary-bg;
+$code-block-border-left: $border-color;
+$grid-docked-body-width: 825px;

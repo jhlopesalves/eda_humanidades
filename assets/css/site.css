@@ -1,185 +1,156 @@
-body.quarto-light {
-  --course-link: #1a5f91;
-  --course-muted: #586169;
-  --course-border: #d6dde2;
-  --course-table-header: #f1f4f6;
-  --course-code-alert: #9e1717;
-  --course-code-import: #005d78;
-  --course-code-attribute: #526244;
-  --course-inline-code-bg: #edf1f4;
-  --course-inline-code-fg: #334155;
+body {
+  --course-serif: Georgia, "Times New Roman", serif;
+  --course-width: 72rem;
 }
 
-body.quarto-dark {
-  --course-link: #9bc6ee;
-  --course-muted: #b7bdc4;
-  --course-border: #4b525a;
-  --course-table-header: #30363b;
-  --course-code-alert: #ffa3a3;
-  --course-inline-code-bg: #303840;
-  --course-inline-code-fg: #e4ebf2;
+.course-skip {
+  z-index: 1100;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--bs-body-bg);
 }
 
 main a,
 .page-navigation a,
 .nav-footer a {
-  color: var(--course-link);
   text-underline-offset: 0.15em;
   overflow-wrap: anywhere;
 }
 
-/* Filenames in headings and prose tables must fit a narrow reading column. */
+:where(a, button, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--bs-link-color);
+  outline-offset: 3px;
+}
+
+/* Keep focus indicators on header controls inside the fixed header. */
+#quarto-header :is(button, .quarto-navigation-tool):focus-visible,
+#quarto-sidebar .sidebar-item-toggle:focus-visible {
+  outline: 2px solid var(--bs-primary);
+  outline-offset: -2px;
+}
+
+#quarto-header {
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.navbar-container {
+  max-width: 86rem;
+  margin-inline: auto;
+}
+
+.navbar-brand {
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.navbar .nav-link {
+  font-size: 0.91rem;
+}
+
+.navbar .nav-link.active {
+  font-weight: 600;
+}
+
+#quarto-sidebar .sidebar-link.active {
+  color: var(--bs-link-color);
+  font-weight: 650;
+}
+
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container > .sidebar-link {
+  font-weight: 650;
+}
+
+#TOC #toc-title {
+  color: var(--bs-secondary-color);
+  font-size: 0.79rem;
+  font-weight: 650;
+}
+
+main#quarto-document-content {
+  min-width: 0;
+}
+
+main :is(h1, h2) {
+  font-family: var(--course-serif);
+  letter-spacing: -0.025em;
+}
+
+main h1 {
+  font-weight: 500;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+main h2 {
+  font-weight: 600;
+  border-bottom-color: var(--bs-border-color);
+}
+
+main :is(h3, h4) {
+  font-weight: 650;
+}
+
+main table:not(.dataframe) :is(th, td) {
+  overflow-wrap: anywhere;
+}
+
 main :is(h2, h3, h4, td, th) code {
   white-space: normal;
   overflow-wrap: anywhere;
 }
 
-/* Exclude fenced/output code, including its syntax-coloured descendants. */
-body:is(.quarto-light, .quarto-dark) main code:not(pre code) {
-  color: var(--course-inline-code-fg);
-  background-color: var(--course-inline-code-bg);
-}
-
-body:is(.quarto-light, .quarto-dark) main :is(h1, h2, h3, h4, h5, h6) code:not(pre code) {
-  color: inherit;
+main :is(h1, h2, h3, h4, h5, h6) code {
   background: transparent;
+  color: inherit;
   padding: 0;
 }
 
-a:focus-visible,
-button:focus-visible,
-summary:focus-visible,
-#quarto-header .quarto-btn-toggle:focus-visible,
-#quarto-header .quarto-search-button:focus-visible,
-#quarto-sidebar .quarto-navigation-tool:focus-visible,
-.aa-Autocomplete .aa-Form .aa-InputWrapper .aa-Input:focus-visible,
-.aa-DetachedFormContainer .aa-Form .aa-InputWrapper .aa-Input:focus-visible {
-  outline: 2px solid var(--course-link);
-  outline-offset: 3px;
+.lesson-runtime-note,
+main .blockquote,
+main figcaption.quarto-float-caption,
+main details > summary,
+.quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
+  color: var(--bs-secondary-color);
 }
 
-/* Keep fixed-header focus rings inside the viewport and away from breadcrumbs. */
-#quarto-header .quarto-btn-toggle:focus-visible,
-#quarto-header .quarto-search-button:focus-visible {
-  outline-offset: -4px;
+.lesson-runtime-note {
+  font-size: 0.88rem;
 }
 
-/* Quarto's search forms remain white in both colour schemes. */
-.aa-Autocomplete .aa-Form .aa-InputWrapper .aa-Input:focus-visible,
-.aa-DetachedFormContainer .aa-Form .aa-InputWrapper .aa-Input:focus-visible {
-  outline-color: #1a5f91;
-  outline-offset: 1px;
+main .blockquote {
+  border-inline-start-color: var(--bs-border-color);
 }
 
-main,
+main .callout {
+  border-radius: 0.22rem;
+}
+
+main .callout-header {
+  font-weight: 650;
+}
+
 .cell,
 .cell-output-display {
   min-width: 0;
 }
 
-.lesson-runtime-note {
-  color: var(--course-muted);
-  font-size: 0.9rem;
+/* Keep long tokens and wide output inside the reading column. */
+pre > code.sourceCode {
+  overflow-wrap: anywhere;
 }
 
-main .blockquote,
-main figcaption.quarto-float-caption {
-  color: var(--course-muted);
+.cell-output :is(pre, table) {
+  margin-bottom: 0.75rem;
 }
 
-body.quarto-light code span.im {
-  color: var(--course-code-import);
+main .cell-output pre,
+main .cell-output pre code {
+  color: var(--bs-body-color);
 }
 
-body.quarto-light code span.at {
-  color: var(--course-code-attribute);
-}
-
-.code-fold summary,
-main details > summary,
-.quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
-  color: var(--course-muted);
-}
-
-code span.al {
-  color: var(--course-code-alert);
-}
-
-/* Saved ANSI traceback colours are inline; use the current theme foreground. */
-.cell-output-error span {
-  color: inherit !important;
-}
-
-h3.course-map-module {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.course-map {
-  --course-map-number-width: 2.75rem;
-  margin: 0 0 1.75rem;
-  padding: 0;
-  list-style: none;
-}
-
-.course-map-row {
-  display: grid;
-  grid-template-columns: var(--course-map-number-width) minmax(0, 1fr);
-  gap: 0.5rem;
-  padding: 1rem 0;
-}
-
-.course-map-number {
-  color: var(--course-muted);
-  font-size: 0.9rem;
-  font-variant-numeric: tabular-nums;
-  padding-top: 0.1rem;
-}
-
-main .course-map-title {
-  color: inherit;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-main .course-map-title:hover,
-main .course-map-title:focus-visible {
-  color: var(--course-link);
-  text-decoration: underline;
-}
-
-.course-map-entry p {
-  margin: 0.15rem 0 0;
-  color: var(--course-muted);
-  font-size: 0.9rem;
-}
-
-.course-map-interlude {
-  padding: 0.75rem 0;
-}
-
-.course-map-interlude .course-map-entry {
-  grid-column: 2;
-  padding-left: 0.75rem;
-  border-left: 2px solid var(--course-border);
-  font-size: 0.9rem;
-}
-
-.course-map-label {
-  color: var(--course-muted);
-  font-size: 0.8rem;
-}
-
-#quarto-sidebar .sidebar-link.active {
-  color: var(--course-link);
-  font-weight: 500;
-}
-
-/* Preserve inspection examples while limiting their height on the website. */
 .output-scroll .cell-output-stdout,
-.output-scroll .cell-output-display:has(pre),
-.output-scroll .cell-output-display:has(table) {
+.output-scroll .cell-output-display:has(pre, table) {
   max-height: 24rem;
   overflow: auto;
   overscroll-behavior: contain;
@@ -189,19 +160,24 @@ main .course-map-title:focus-visible {
   overflow-x: auto;
 }
 
-table.dataframe {
-  font-size: 0.9rem;
+/* Saved ANSI traceback colours are inline and may have low contrast. */
+.cell-output-error span {
+  color: inherit !important;
 }
 
-table.dataframe th,
-table.dataframe td {
+table.dataframe {
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+}
+
+table.dataframe :is(th, td) {
   padding: 0.4rem 0.65rem;
-  border-color: var(--course-border);
+  border-color: var(--bs-border-color);
 }
 
 table.dataframe thead th {
-  font-weight: 600;
-  background: var(--course-table-header);
+  background: var(--bs-secondary-bg);
+  font-weight: 650;
 }
 
 .cell-output-display table caption {
@@ -215,16 +191,21 @@ mjx-container[display="true"] {
   overflow-y: hidden;
 }
 
+/* Raster plots have their own light coordinate plane, including transparent PNGs. */
+figure.quarto-float-fig img {
+  background-color: #fff;
+}
+
 .author-profile {
   display: grid;
-  grid-template-columns: 128px minmax(0, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: minmax(6rem, 8rem) minmax(0, 1fr);
+  gap: 1.5rem;
   align-items: start;
 }
 
 .author-photo {
-  width: 128px;
-  height: 128px;
+  width: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
   object-position: 58% 30%;
 }
@@ -233,17 +214,181 @@ mjx-container[display="true"] {
   margin-top: 0;
 }
 
+.course-landing main.content {
+  grid-column: screen-start / screen-end;
+  padding-inline: clamp(1.2rem, 4.5vw, 3.5rem);
+}
+
+.course-home {
+  max-width: var(--course-width);
+  margin-inline: auto;
+  padding-block: clamp(1.5rem, 4.2vw, 4rem) clamp(2rem, 6vw, 5rem);
+}
+
+.course-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  padding-block: 0 clamp(2rem, 5vw, 4.25rem);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.course-hero h1.title {
+  margin: 0 0 1.1rem;
+  font-size: clamp(2.4rem, 4.55vw, 4.35rem);
+  line-height: 1.05;
+  text-wrap: wrap;
+}
+
+.course-hero .course-lead {
+  display: block;
+  max-width: 51ch;
+  font-size: clamp(1rem, 1.5vw, 1.19rem);
+  color: var(--bs-secondary-color);
+}
+
+.course-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 1.2rem;
+  margin: 1.45rem 0 1.1rem;
+  font-size: 0.9rem;
+}
+
+.course-actions p,
+.course-byline p {
+  margin: 0;
+}
+
+.course-primary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.6rem;
+  padding: 0.5rem 0.85rem;
+  color: var(--bs-body-bg);
+  background: var(--bs-link-color);
+  border-radius: 0.2rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.course-primary:hover,
+.course-primary:focus-visible {
+  color: var(--bs-body-bg);
+  text-decoration: underline;
+}
+
+.course-byline,
+.course-hero-figure figcaption {
+  color: var(--bs-secondary-color);
+  font-size: 0.82rem;
+}
+
+.course-hero-figure {
+  color: var(--bs-link-color);
+  margin: 0;
+}
+
+.course-hero-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.course-hero-figure figcaption {
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+.course-section-intro {
+  margin-block: clamp(1.75rem, 5vw, 3.25rem) 1.5rem;
+  scroll-margin-top: 5rem;
+}
+
+.course-section-intro h2 {
+  margin: 0 0 0.4rem;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+}
+
+.course-section-intro p {
+  max-width: 67ch;
+  color: var(--bs-secondary-color);
+}
+
+.course-modules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+.course-module h3 {
+  border-top: 2px solid var(--bs-link-color);
+  margin: 0;
+  padding: 0.85rem 0;
+  font-size: 1.04rem;
+}
+
+.course-map {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-map-row {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.6rem;
+  padding-block: 0.78rem;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.course-map-number {
+  color: var(--bs-link-color);
+  font-size: 0.83rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.12em;
+}
+
+.course-map-title {
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.course-map-title:hover,
+.course-map-title:focus-visible {
+  text-decoration: underline;
+}
+
+.course-map-entry p {
+  margin: 0.13rem 0 0;
+  color: var(--bs-secondary-color);
+  font-size: 0.89rem;
+  line-height: 1.5;
+}
+
+.course-map-interlude .course-map-entry {
+  grid-column: 2;
+  padding-inline-start: 0.75rem;
+  border-inline-start: 2px solid var(--bs-border-color);
+  font-size: 0.89rem;
+}
+
+.course-map-label {
+  color: var(--bs-secondary-color);
+}
+
 footer.footer .nav-footer {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr);
-  gap: 1.5rem 2rem;
-  align-items: start;
-  padding: 1.25rem 1.5rem;
-  border-top: 1px solid var(--course-border);
-  /* The unaltered positive institutional marks need a light surface. */
-  background: #f5f6f7;
-  color: #29343d;
-  text-align: left;
+  grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr) minmax(0, 0.85fr);
+  gap: 1.25rem 2rem;
+  padding: 1.6rem max(1.25rem, calc((100% - var(--course-width)) / 2));
+  border-top: 1px solid var(--bs-border-color);
+  background: var(--bs-secondary-bg);
+  color: var(--bs-body-color);
 }
 
 footer.footer .nav-footer > div {
@@ -251,17 +396,25 @@ footer.footer .nav-footer > div {
   min-height: 0;
   margin: 0;
   order: 0;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   line-height: 1.5;
-  text-align: left;
+  text-align: start;
+}
+
+.nav-footer a {
+  color: var(--bs-link-color);
 }
 
 .course-footer-logos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem 1.5rem;
-  margin-top: 0.65rem;
+  width: fit-content;
+  max-width: 100%;
+  gap: 0.5rem 1.2rem;
+  padding: 0.45rem 0.7rem;
+  /* The official positive marks need a light backing in both themes. */
+  background: #fff;
 }
 
 .course-footer-logos img {
@@ -279,12 +432,40 @@ footer.footer .nav-footer > div {
 }
 
 .course-footer-support {
-  color: #586169;
+  color: var(--bs-secondary-color);
 }
 
 .course-footer-label {
-  font-weight: 600;
+  font-weight: 650;
   margin-bottom: 0.35rem;
+}
+
+.course-footer-reuse a {
+  display: inline-block;
+  min-height: 1.5rem;
+}
+
+.quarto-page-breadcrumbs .breadcrumb {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.quarto-page-breadcrumbs .breadcrumb-item:first-child {
+  flex-shrink: 0;
+}
+
+.quarto-page-breadcrumbs a {
+  line-height: 1.5rem;
+  padding-block: 0.2rem;
+}
+
+#quarto-back-to-top {
+  z-index: 10;
+  inset: auto max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) auto;
+  transform: none;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.2rem;
+  box-shadow: none;
 }
 
 .course-footer-repository {
@@ -293,52 +474,69 @@ footer.footer .nav-footer > div {
   gap: 0.5rem;
 }
 
-.nav-footer a {
-  color: #1a5f91;
-}
-
-.nav-footer a:focus-visible {
-  outline-color: #1a5f91;
-}
-
 @media (max-width: 991.98px) {
-  footer.footer .nav-footer {
-    grid-template-columns: minmax(0, 1fr);
+  .navbar .navbar-container {
+    column-gap: 0.15rem;
+    padding-inline: 0.65rem;
   }
 
-  #quarto-sidebar .quarto-navigation-tool,
-  #quarto-header .quarto-btn-toggle,
-  #quarto-header .quarto-search-button {
-    min-width: 2.5rem;
-    min-height: 2.5rem;
+  .navbar .navbar-brand-container {
+    order: 1;
+    flex: 1;
+    max-width: none;
+  }
+
+  .navbar .navbar-brand {
+    margin-inline: 0;
+    font-size: clamp(0.83rem, 3.8vw, 1.08rem);
+  }
+
+  .navbar #quarto-search {
+    order: 2;
+  }
+
+  .navbar .navbar-toggler {
+    order: 3;
+    margin: 0;
+  }
+
+  .navbar .quarto-navbar-tools {
+    order: 4;
+  }
+
+  #quarto-header :is(.navbar-toggler, .aa-DetachedSearchButton, .quarto-navigation-tool, .quarto-btn-toggle) {
+    min-width: 2.6rem;
+    min-height: 2.6rem;
+  }
+
+  #quarto-header .quarto-navigation-tool {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  #quarto-header .aa-DetachedSearchButton {
+    justify-content: center;
   }
 }
 
 @media (max-width: 767.98px) {
-  .course-map {
-    --course-map-number-width: 1.75rem;
+  .course-hero,
+  .course-modules,
+  footer.footer .nav-footer {
+    grid-template-columns: minmax(0, 1fr);
   }
 
-  .course-map-row {
-    padding: 0.9rem 0;
-  }
-
-  .course-map-interlude {
-    padding: 0.65rem 0;
+  .course-hero-figure {
+    width: min(100%, 20rem);
+    margin-inline: auto;
   }
 
   .author-profile {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .author-photo {
-    width: 112px;
-    height: 112px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+    width: 7rem;
   }
 }

@@ -24,7 +24,9 @@ website:
   site-url: https://jhlopesalves.github.io/eda_humanidades/
   repo-url: https://github.com/jhlopesalves/eda_humanidades
   repo-branch: main
-  search: true
+  search:
+    location: navbar
+    type: overlay
   page-navigation: true
   back-to-top-navigation: true
   open-graph: true
@@ -80,16 +82,26 @@ website:
         </p>
       </div>
       ```
-  sidebar:
+  navbar:
     title: "Estatística em Python"
-    style: docked
-    tools:
+    pinned: true
+    left:
+      - href: index.qmd#encontros
+        text: Encontros
+      - href: DATASETS.md
+        text: Dados
+      - href: about.qmd
+        text: Sobre
+    right:
       - icon: github
         href: https://github.com/jhlopesalves/eda_humanidades
         aria-label: GitHub
+  sidebar:
+    id: encontros
+    title: Encontros
+    style: docked
+    border: true
     contents:
-      - href: index.qmd
-        text: Início
       - section: Módulo 1
         contents:
           - href: encontro_1/enc_1.ipynb
@@ -120,10 +132,6 @@ website:
             text: "10 - Amostragem e incerteza"
           - href: encontro_10/enc_10-parte2.ipynb
             text: "10, parte 2 - Bootstrap e intervalos"
-      - href: DATASETS.md
-        text: Dados e proveniência
-      - href: about.qmd
-        text: Sobre o curso
 
 execute:
   enabled: false
@@ -131,14 +139,18 @@ execute:
 format:
   html:
     theme:
-      light: cosmo
-      dark: darkly
+      light: [default, assets/css/light.scss]
+      dark: [default, assets/css/dark.scss]
     css: assets/css/site.css
-    fontsize: 18px
-    linestretch: 1.6
+    include-after-body:
+      text: |
+        <a class="course-skip visually-hidden-focusable position-fixed" href="#quarto-document-content">Pular para o conteúdo</a>
+        <script src="/assets/js/reading.js" defer></script>
+    fontsize: 1.0625rem
+    linestretch: 1.65
     grid:
-      sidebar-width: 300px
-      body-width: 760px
+      sidebar-width: 250px
+      body-width: 748px
       margin-width: 220px
     toc: true
     code-copy: true
