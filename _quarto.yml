@@ -80,13 +80,25 @@ website:
         </p>
       </div>
       ```
-  sidebar:
+  navbar:
     title: "Estatística em Python"
-    style: docked
-    tools:
+    search: true
+    left:
+      - href: index.qmd
+        text: Início
+      - href: encontro_1/enc_1.ipynb
+        text: Encontros
+      - href: DATASETS.md
+        text: Dados
+      - href: about.qmd
+        text: Sobre
+    right:
       - icon: github
         href: https://github.com/jhlopesalves/eda_humanidades
         aria-label: GitHub
+  sidebar:
+    title: "Estatística em Python"
+    style: docked
     contents:
       - href: index.qmd
         text: Início
