@@ -49,6 +49,17 @@ Para executar ou modificar os exemplos, use o link **Abrir no Google Colab** dis
 
 Este repositório reúne os notebooks-fonte, atividades, gabaritos e conjuntos de dados utilizados no curso.
 
+### Regenerar a figura da página inicial
+
+Os dois SVGs do Gapminder são gerados a partir da cópia do CSV usada no
+Encontro 8. Para atualizá-los, execute na raiz do repositório:
+
+```sh
+uv run --with-requirements scripts/requirements.txt python scripts/generate_gapminder_figure.py
+```
+
+O Quarto usa os SVGs já gerados em `assets/figures/`.
+
 ## Equipe e projeto
 
 **Instrutor e responsável pelos materiais:** Jhonatan H. Lopes<br>

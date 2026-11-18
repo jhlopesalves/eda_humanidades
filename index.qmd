@@ -34,37 +34,14 @@ page-navigation: false
 :::
 
 ```{=html}
-<figure class="course-hero-figure">
-<svg viewBox="0 0 400 290" role="img" aria-labelledby="hero-figure-title" xmlns="http://www.w3.org/2000/svg">
-<title id="hero-figure-title">Ilustração esquemática de uma distribuição e de observações em um gráfico de dispersão</title>
-<g fill="none" stroke="currentColor" stroke-opacity=".22">
-<path d="M24 24V142H376 M24 166V270H376"/>
-<path d="M24 108H376 M24 74H376 M24 40H376 M24 218H376"/>
-</g>
-<path d="M25 137C80 137 100 129 126 97S170 23 200 23 248 68 274 103 328 137 375 137L375 142H25Z" fill="currentColor" fill-opacity=".13"/>
-<path d="M25 137C80 137 100 129 126 97S170 23 200 23 248 68 274 103 328 137 375 137" fill="none" stroke="currentColor" stroke-width="2.5"/>
-<path d="M40 253L360 178" stroke="currentColor" stroke-opacity=".4" stroke-dasharray="5 5"/>
-<g fill="currentColor" fill-opacity=".75">
-<circle cx="48" cy="250" r="4"/>
-<circle cx="69" cy="239" r="4"/>
-<circle cx="91" cy="255" r="4"/>
-<circle cx="111" cy="225" r="4"/>
-<circle cx="132" cy="242" r="4"/>
-<circle cx="151" cy="224" r="4"/>
-<circle cx="169" cy="235" r="4"/>
-<circle cx="184" cy="207" r="4"/>
-<circle cx="203" cy="221" r="4"/>
-<circle cx="222" cy="198" r="4"/>
-<circle cx="238" cy="217" r="4"/>
-<circle cx="259" cy="189" r="4"/>
-<circle cx="279" cy="203" r="4"/>
-<circle cx="300" cy="179" r="4"/>
-<circle cx="318" cy="192" r="4"/>
-<circle cx="341" cy="173" r="4"/>
-<circle cx="358" cy="185" r="4"/>
-</g>
-</svg>
-<figcaption>Distribuição e associação · ilustração conceitual</figcaption>
+<figure class="course-hero-figure gapminder-figure">
+<img src="assets/figures/gapminder-2007-claro.svg"
+     class="light-content" width="432" height="340"
+     alt="Dispersão de 142 países em 2007. A expectativa de vida tende a aumentar com o PIB per capita, que está em escala logarítmica. As cores indicam os continentes e a área dos círculos representa a população.">
+<img src="assets/figures/gapminder-2007-escuro.svg"
+     class="dark-content" width="432" height="340"
+     alt="Dispersão de 142 países em 2007. A expectativa de vida tende a aumentar com o PIB per capita, que está em escala logarítmica. As cores indicam os continentes e a área dos círculos representa a população.">
+<figcaption><a href="encontro_8/enc_8-parte2.ipynb#visualizacao-editorial">Ver a análise no Encontro 8, parte 2</a></figcaption>
 </figure>
 ```
 
