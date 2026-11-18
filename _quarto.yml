@@ -17,6 +17,8 @@ project:
     - encontro_9/enc_9.ipynb
     - encontro_10/enc_10.ipynb
     - encontro_10/enc_10-parte2.ipynb
+    - encontro_11/enc_11.ipynb
+    - encontro_12/enc_12.ipynb
 
 website:
   title: "Estatística Descritiva e Inferencial em Python para Humanidades"
@@ -132,6 +134,10 @@ website:
             text: "10 - Amostragem e incerteza"
           - href: encontro_10/enc_10-parte2.ipynb
             text: "10, parte 2 - Bootstrap e intervalos"
+          - href: encontro_11/enc_11.ipynb
+            text: "11 - Testes de hipóteses"
+          - href: encontro_12/enc_12.ipynb
+            text: "12 - Análise de corpus jornalístico"
 
 execute:
   enabled: false

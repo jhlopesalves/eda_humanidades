@@ -20,6 +20,11 @@ from nbclient import NotebookClient
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_ERROR = ("KeyError", "'preposição'")
 
+SAVED_ONLY = {
+    "encontro_11/enc_11.ipynb": "reads the Upworthy CSV from GitHub",
+    "encontro_12/enc_12.ipynb": "reads remote Parquet and installs Colab dependencies",
+}
+
 # These checks compare independent implementations and known data invariants.
 # They stay outside the teaching cells and are never saved into the notebooks.
 CHECKS = {
@@ -142,12 +147,16 @@ assert np.isclose(cohens_d(np.array([1, 2, 3]), np.array([2, 3, 4])), -1)
 }
 
 
-def check_execution_state(notebook: nbformat.NotebookNode, path: Path) -> int:
-    """Validate saved or newly executed counts and the one deliberate error."""
+def check_execution_state(
+    notebook: nbformat.NotebookNode, path: Path, *, require_contiguous_counts: bool = True
+) -> int:
+    """Validate execution counts where available and check notebook errors."""
     cells = [cell for cell in notebook.cells if cell.cell_type == "code"]
     counts = [cell.execution_count for cell in cells]
-    if counts != list(range(1, len(cells) + 1)):
+    if require_contiguous_counts and counts != list(range(1, len(cells) + 1)):
         raise ValueError(f"{path}: inconsistent execution counts: {counts}")
+    if not require_contiguous_counts and not any(cell.outputs for cell in cells):
+        raise ValueError(f"{path}: expected saved outputs")
     errors = []
     for cell in cells:
         for output in cell.outputs:
@@ -187,9 +196,14 @@ def check_notebook(path: Path, execute: bool) -> int:
     notebook = nbformat.read(path, as_version=4)
     nbformat.validate(notebook)
     check_cell_options(notebook, path)
-    code_count = check_execution_state(notebook, path)
-    if execute:
-        relative = path.relative_to(ROOT).as_posix()
+    relative = path.relative_to(ROOT).as_posix()
+    saved_only = relative in SAVED_ONLY
+    code_count = check_execution_state(
+        notebook, path, require_contiguous_counts=not saved_only
+    )
+    if execute and saved_only:
+        print(f"SKIP fresh execution {relative}: {SAVED_ONLY[relative]}")
+    elif execute:
         extra = nbformat.v4.new_code_cell(CHECKS[relative])
         if notebook.nbformat_minor < 5:
             extra.pop("id", None)

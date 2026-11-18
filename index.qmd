@@ -157,6 +157,20 @@ As aulas combinam fundamentos de Python e raciocínio estatístico: como calcula
       <p>Reamostragem por participantes e palavras com dados de decisão lexical.</p>
     </div>
   </li>
+  <li class="course-map-row">
+    <span class="course-map-number">11</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_11/enc_11.ipynb">Testes de hipóteses</a>
+      <p>Testes de permutação e comparação de proporções.</p>
+    </div>
+  </li>
+  <li class="course-map-row">
+    <span class="course-map-number">12</span>
+    <div class="course-map-entry">
+      <a class="course-map-title" href="encontro_12/enc_12.ipynb">Análise linguística de um corpus jornalístico</a>
+      <p>Dispersão lexical, anotação linguística e componentes principais.</p>
+    </div>
+  </li>
 </ul>
 ```
 
