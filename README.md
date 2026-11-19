@@ -47,7 +47,7 @@ Cada encontro pode ser lido diretamente no site e também aberto no Google Colab
 
 Para acompanhar o curso, use preferencialmente o **[site](https://jhlopesalves.github.io/eda_humanidades/)**, onde os encontros estão organizados em sequência e o código aparece junto às saídas salvas.
 
-[![Encontro 12 no tema escuro: código Python acima de sete painéis que projetam as matérias de cada seção da Folha de S.Paulo nos dois primeiros componentes principais.](assets/readme/encontro-12-escuro.png)](https://jhlopesalves.github.io/eda_humanidades/encontro_12/enc_12.html#fig-folha-pca)
+[![Encontro 12: código Python acima de sete painéis que projetam as matérias de cada seção da Folha de S.Paulo nos dois primeiros componentes principais.](assets/readme/encontro-12-claro.png)](https://jhlopesalves.github.io/eda_humanidades/encontro_12/enc_12.html#fig-folha-pca)
 
 Para executar ou modificar os exemplos, use o link **Abrir no Google Colab** disponível no início de cada encontro.
 
