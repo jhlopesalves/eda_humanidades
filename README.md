@@ -1,16 +1,16 @@
 # Estatística Descritiva e Inferencial em Python para Humanidades
 
-[![Site do curso](https://img.shields.io/badge/site-acessar%20o%20curso-1f6feb?style=flat-square)](https://jhlopesalves.github.io/eda_humanidades/)
-[![Publicação](https://github.com/jhlopesalves/eda_humanidades/actions/workflows/publish.yml/badge.svg)](https://github.com/jhlopesalves/eda_humanidades/actions/workflows/publish.yml)
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
-![Idioma](https://img.shields.io/badge/idioma-pt--BR-555?style=flat-square)
-![Área](https://img.shields.io/badge/área-humanidades-6f42c1?style=flat-square)
-
 Curso de programação, análise de dados e estatística em Python voltado a estudantes e pesquisadores das humanidades.
 
 Os materiais combinam fundamentos de Python, análise exploratória, visualização e raciocínio estatístico com exemplos baseados em textos, metadados bibliográficos e dados socioeconômicos.
 
-**[Acessar o site do curso](https://jhlopesalves.github.io/eda_humanidades/)** · **[Começar pelo Encontro 1](https://jhlopesalves.github.io/eda_humanidades/encontro_1/enc_1.html)**
+[![Página inicial do curso: título, apresentação e dispersão de renda e expectativa de vida em 142 países (Gapminder, 2007).](assets/readme/pagina-inicial-claro.png)](https://jhlopesalves.github.io/eda_humanidades/)
+
+<p align="center">
+  <a href="https://jhlopesalves.github.io/eda_humanidades/"><strong>Acessar o site do curso</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://jhlopesalves.github.io/eda_humanidades/encontro_1/enc_1.html">Começar pelo Encontro 1</a>
+</p>
 
 ## Sobre o curso
 
@@ -46,6 +46,8 @@ Cada encontro pode ser lido diretamente no site e também aberto no Google Colab
 ## Como usar os materiais
 
 Para acompanhar o curso, use preferencialmente o **[site](https://jhlopesalves.github.io/eda_humanidades/)**, onde os encontros estão organizados em sequência e o código aparece junto às saídas salvas.
+
+[![Encontro 12 no tema escuro: código Python acima de sete painéis que projetam as matérias de cada seção da Folha de S.Paulo nos dois primeiros componentes principais.](assets/readme/encontro-12-escuro.png)](https://jhlopesalves.github.io/eda_humanidades/encontro_12/enc_12.html#fig-folha-pca)
 
 Para executar ou modificar os exemplos, use o link **Abrir no Google Colab** disponível no início de cada encontro.
 
